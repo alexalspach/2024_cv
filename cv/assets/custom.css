@@ -1,0 +1,95 @@
+/* 
+font-family: 'Alumni Sans Pinstripe', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Audiowide', cursive;
+* font-family: 'Black Ops One', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Chivo Mono', monospace;
+font-family: 'Darker Grotesque', sans-serif;
+font-family: 'Iceland', cursive;
+font-family: 'Londrina Sketch', cursive;
+* font-family: 'Mallanna', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Oswald', sans-serif;
+* font-family: 'Play', sans-serif;
+* font-family: 'Rubik Glitch', cursive;
+font-family: 'Rubik Marker Hatch', cursive;
+* font-family: 'Rubik Maze', cursive;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Silkscreen', cursive;
+font-family: 'Tourney', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Anton&family=Audiowide&family=Black+Ops+One&family=Bungee&family=Bungee+Inline&family=Bungee+Shade&family=Cabin+Sketch:wght@700&family=Chivo+Mono:wght@900&family=Darker+Grotesque:wght@300;900&family=Iceland&family=Londrina+Sketch&family=Mallanna&family=Monoton&family=Montserrat+Subrayada:wght@700&family=Oswald:wght@700&family=Play:wght@400;700&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik+Moonrocks&family=Silkscreen:wght@400;700&family=Tourney&display=swap');
+
+body {
+    font-family: , sans-serif;
+}
+
+
+#header-name {
+  
+  position: relative;
+  margin-top: .3em;
+  margin-bottom: -.4em;
+
+  font-family: 'Rubik Glitch', sans-serif;
+  font-size:9.5vw;
+  font-weight: 400;
+  /*background: -webkit-linear-gradient(90deg, #7f00f9, #007cf7);*/
+  background: -webkit-linear-gradient(100deg, #7f00f9, #007cf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#header-pagename {
+  /*background-color: yellow;*/
+
+  position: relative;
+  
+  font-size:2em;
+  font-weight: 700;
+  font-family: monospace;
+
+}
+
+#project-filter-buttons{
+
+  position: relative;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  --mdb-btn-bg: #cdcaf9 !important;
+
+}
+
+.btn-secondary:active:hover {
+  --mdb-btn-hover-bg: #a61313 !important;
+
+}
+.btn-check:checked + .btn {
+
+
+  --mdb-btn-bg: #000000 !important;
+
+}
+
+
+.row {
+  data-masonry='{"percentPosition": true }'
+}
+
+@media screen and (min-width: 1001px) {
+  #header-name {
+    font-size: 6em;
+  }
+}
+
+
+
