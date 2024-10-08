@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+html {
+	/*overflow: -moz-scrollbars-vertical;*/
+	overflow: hidden; /*background: #000000;*//* url('img/dotted-bg.png') nrepeat fixed center; */
+	height:100%;
+	
+}
+
+body {
+	background-color: #fff;
+	/*background-color: #fff;*/
+	/*background: url('img/dotted-bg.png') repeat;*/  /* background: #000000; */
+	/*background: #F2F2F2;*/
+	
+	height:100%;
+	min-width:440px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+.container-narrow {
+	/*margin: 0 auto;*/
+	max-width: 900px;	
+}
+
+#header {
+
+	font-size: 8em;
+    font-weight: bold;
+    line-height: 1;
+
+	padding-top: 15%;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+	/*margin-top: 20%;
+	margin-right: 0px;
+	margin-left: 0px;*/
+	/*max-width: 900px;*/
+	
+	color: white;
+	/*text-shadow: 0px 7px 5px #000000;*/
+	
+	
+	/*-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;*/
+	/*border: 3px solid #e3e3e3;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		  border-bottom:none;
+	*/		
+}
+
+
+#buttons {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+#quote {
+	color: black;
+	/*padding-top: 50px;*/
+	padding-top: 10px;
+	padding-left: 30px;
+
+}
+
+#push {
+
+	margin-left: 300px;
+
+}
+
+h1, .h1 {
+	font-weight: 700;
+	font-size: 60px;
+	/*margin-bottom: 0px;*/
+}
+
+h3, .h3 {
+/*color: #666;*/
+
+	font-weight:300;
+}
+
+
+
+
+
+
+
+/* Clip text element */
+.clip-text {
+
+    position: relative;
+    display: inline-block;
+    /*margin: .25em;
+    padding: .5em .75em;
+    text-align: center;*/
+    /* Color fallback */
+
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    background-image: url(../../backgrounds/paint.jpg);
+    background-color:white;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    background-color: #fff;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
