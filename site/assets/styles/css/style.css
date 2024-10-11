@@ -224,7 +224,7 @@ h1 a:active {
 }
 
 .scale-animation {
-  animation: scaleUpDown 1s cubic-bezier(0.42, 0, 0.58, 1);
+  /* animation: scaleUpDown 1s cubic-bezier(0.42, 0, 0.58, 1); */
 }
 
 
@@ -726,7 +726,7 @@ iframe {
 #time-place-table {
 	
 	/*margin-right: 15px;*/
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 00px;
 }
 
@@ -792,8 +792,8 @@ td.table-links {
 }
 
 .paper-title {
-	font-size: 18px;
-	margin-top: 2px;
+	font-size: 21px;
+  margin-top: 12px;
 	margin-bottom: 0px;
 	font-weight: 700;
 

@@ -1,0 +1,55 @@
+
+.sticky-button-container {
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 50px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  width: 100%; /* Ensures it spans the full width of the parent */
+
+  /* Optional: Add background or padding if needed */
+  margin-bottom: -42px;
+}
+
+.sticky-top-button {
+
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  /*font-size: 18px;*/
+
+  background-color: white;
+  border-bottom: solid 1px #374746;
+  /*border-left: solid 1px #374746;*/
+
+
+  /*padding-right: 6px;
+  padding-left: 6px;*/
+
+
+
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid #374746;
+  border-right: 0px solid white;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  line-height: 1.428571429;
+  /*padding: 10px 15px 10px 15px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 8px;
+
+
+
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
