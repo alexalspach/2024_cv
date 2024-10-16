@@ -5,8 +5,11 @@
 
 html {
 	/*overflow: -moz-scrollbars-vertical;*/
-	overflow: hidden; /*background: #000000;*//* url('img/dotted-bg.png') nrepeat fixed center; */
+	/*overflow: hidden;*/
 	height:100%;
+
+	overflow-y: auto; /* Allow vertical scrolling */
+    height: 100%;
 	
 }
 
@@ -31,6 +34,7 @@ h1, h2, h3, h4, h5 {
 	max-width: 900px;	
 }
 
+/*
 #header {
 
 	font-size: 8em;
@@ -41,29 +45,32 @@ h1, h2, h3, h4, h5 {
 	padding-bottom: 10px;
 	padding-left: 30px;
 	padding-right: 10px;
-	/*margin-top: 20%;
-	margin-right: 0px;
-	margin-left: 0px;*/
-	/*max-width: 900px;*/
+	max-width: 750px;
 	
 	color: white;
-	/*text-shadow: 0px 7px 5px #000000;*/
-	
-	
-	/*-webkit-border-radius: 20px 20px 20px 20px;
-	-moz-border-radius: 20px 20px 20px 20px;
-	border-radius: 20px 20px 20px 20px;*/
-	/*border: 3px solid #e3e3e3;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-		  border-bottom:none;
-	*/		
+		
+}
+*/
+
+#index_header
+{
+	position: relative;
+	margin-top: 10%;
+
+	margin-left: 30px;	
+}
+
+.header-img {
+
+	/*padding-left: 30px;*/
+	width: 750px;
 }
 
 
 #buttons {
+	position: relative;
 	padding-top: 20px;
-	padding-left: 20px;
+	margin-left: -10px;
 }
 
 #quote {
@@ -73,6 +80,29 @@ h1, h2, h3, h4, h5 {
 	padding-left: 30px;
 
 }
+
+#select_content{
+	position: relative;
+	padding-top: 4%;
+	margin-left: 30px;
+
+	width: 858px;
+}
+
+
+.well{
+
+	background-color: white;
+	box-shadow: none;
+	border: 1px solid #3680a9;
+	
+}
+
+.label-info {
+	background-color: #030635;
+}
+
+
 
 #push {
 
@@ -113,7 +143,7 @@ h3, .h3 {
 
     -webkit-text-fill-color: transparent;
 
-    background-image: url(../../backgrounds/paint.jpg);
+    background-image: url(../../images/backgrounds/paint.jpg);
     background-color:white;
 }
 
