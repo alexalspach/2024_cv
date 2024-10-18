@@ -19,11 +19,14 @@
 
 .btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
 	
-	/*background-color: transparent;
-	color: #FFFFFF;*/
-	border-color: #3680a9;
-	color: #374746;
+	background-color: white;
+	/*color: #FFFFFF;*/
+	/*border-color: #3680a9;*/
+	border-color: #000;
+	color: #000;
 	
+	transform: scale(1.02);
+
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
@@ -32,11 +35,12 @@
 }
 
 .btn-lg {
-	margin-left: 10px;
+	margin-left: 0px;
 	margin-right: 10px;
-	width: 120px;
-
+	/*width: 120px;*/
 	border-radius: 0px;
+
+	background-color: white;
 }
 
 

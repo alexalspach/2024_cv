@@ -210,22 +210,7 @@ h1 a:active {
 
 
 
-/* CSS for scaling animation */
-@keyframes scaleUpDown {
-  0% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-.scale-animation {
-  /* animation: scaleUpDown 1s cubic-bezier(0.42, 0, 0.58, 1); */
-}
 
 
 
@@ -237,7 +222,9 @@ h1 a:active {
   background-color: #eeeeee;
   border: none;
 
-  padding-top: 15px;
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   -webkit-border-radius: 0px 0px 0px 0px;
   -moz-border-radius: 0px 0px 0px 0px;
@@ -250,7 +237,7 @@ h1 a:active {
 }
 
 .well-media {
-	margin-top:30px;	
+	margin-top:15px;	
 	width: 100%;
 	text-align: center;
 }
@@ -269,44 +256,60 @@ h1 a:active {
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
 }
 
+.sticker-shadow {
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	
+	/* 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+	*/
+
+	-webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+}
+
 .media-youtube-fullwidth {
 
 	display:inline-block;
 	
 	width:100%;
-	height:461px;	
+	height:460px;	
 	
-	margin-bottom: 10px;
+	margin-top: 10px;
 	
 }
 
 .media-img-fullwidth {
 	width: 100%;
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
-
 
 
 .media-flex-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .media-flex-img-halfwidth {
 	width:49.5%;
+	margin-top: 10px;
 }
 .media-flex-youtube-halfwidth {
 	width:49.5%;;
 	height:228px;	
+	margin-top: 10px;
 }
 .media-flex-img-thirdwidth {
 	width:33%;
+	margin-top: 10px;
 }
 
 .media-flex-img-quarterwidth {
 	width:24.25%;
+	margin-top: 10px;
 }
 
 
@@ -322,24 +325,23 @@ h1 a:active {
 
 
 
+.img-bd-tri-atlas-well-sticker
+{
+	height: 351px;
+  margin-right: -36px;
+  margin-top: -41px;
+  margin-bottom: -20px;
+  margin-left: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img-punyo-heart-well-sticker
+{
+	height: 194px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: -40px;
+  margin-bottom: -20px;
+}
 
 
 
@@ -730,14 +732,6 @@ iframe {
 	margin-left: 00px;
 }
 
-
-#link-table {
-	
-	/*margin-right: 15px;*/
-	margin-top: 0px;
-	margin-left: 00px;
-}
-
 #top-link-table {
 	
 	/*margin-right: 15px;*/
@@ -783,7 +777,6 @@ td.year {
 
 	padding-top: 0px;
 
-
 }
 
 td.table-links { 
@@ -791,13 +784,7 @@ td.table-links {
 	padding-top:4px;
 }
 
-.paper-title {
-	font-size: 21px;
-  margin-top: 12px;
-	margin-bottom: 0px;
-	font-weight: 700;
 
-}
 
 ul {
 	padding-left: 12px;
@@ -831,6 +818,22 @@ a.flip-colors {
 a.flip-colors:hover {
 
 	color:#000000;
+}
+
+.project-title {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.project-description {
+	margin-top: 15px;
+}
+
+#link-table {
+	
+	/*margin-right: 15px;*/
+	margin-top: 30px;
+	margin-left: 00px;
 }
 
 

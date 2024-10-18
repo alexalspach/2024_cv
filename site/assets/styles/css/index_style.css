@@ -2,14 +2,13 @@
 /* CSS Document */
 
 
+.wrapper {
+  overflow: visible; /* Ensure no overflow properties interfere */
+}
 
 html {
 	/*overflow: -moz-scrollbars-vertical;*/
 	/*overflow: hidden;*/
-	height:100%;
-
-	overflow-y: auto; /* Allow vertical scrolling */
-    height: 100%;
 	
 }
 
@@ -19,7 +18,6 @@ body {
 	/*background: url('img/dotted-bg.png') repeat;*/  /* background: #000000; */
 	/*background: #F2F2F2;*/
 	
-	height:100%;
 	min-width:440px;
 	
 	font-family:Arial, Helvetica, sans-serif;
@@ -29,10 +27,43 @@ h1, h2, h3, h4, h5 {
 	font-family:Arial, Helvetica, sans-serif;	
 }
 
+h1, .h1 {
+	font-weight: 700;
+	font-size: 60px;
+	/*margin-bottom: 0px;*/
+}
+
+h3, .h3 {
+/*color: #666;*/
+
+	font-weight:300;
+}
+
+
+
+a{
+	color: #333;
+}
+
+a:hover{
+	color: #E89C0C;
+}
+
+.project-title-more-info-link {
+	color: #333;
+}
+.project-title-more-info-link:hover {
+	color: #E89C0C;
+}
+
+
+
 .container-narrow {
 	/*margin: 0 auto;*/
 	max-width: 900px;	
 }
+
+
 
 /*
 #header {
@@ -54,23 +85,27 @@ h1, h2, h3, h4, h5 {
 
 #index_header
 {
-	position: relative;
 	margin-top: 10%;
-
 	margin-left: 30px;	
+	margin-bottom: 0px;
 }
 
 .header-img {
-
 	/*padding-left: 30px;*/
 	width: 750px;
 }
 
 
 #buttons {
-	position: relative;
-	padding-top: 20px;
-	margin-left: -10px;
+  position: sticky;
+  margin-left: 30px;
+  background-color: white;
+  width: 290px;
+  top: 0px;
+  z-index: 99;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-radius: 0 0 18px 0;
 }
 
 #quote {
@@ -98,6 +133,14 @@ h1, h2, h3, h4, h5 {
 	
 }
 
+.media-shadow{
+	-webkit-filter: none;
+	filter: none;
+	box-shadow: none;
+	border: 1px solid #666;
+
+}
+
 .label-info {
 	background-color: #030635;
 }
@@ -110,17 +153,13 @@ h1, h2, h3, h4, h5 {
 
 }
 
-h1, .h1 {
-	font-weight: 700;
-	font-size: 60px;
-	/*margin-bottom: 0px;*/
+.project-title-more-info-link {
+	color: #333;
+}
+.project-title-more-info-link:hover {
+	color: #E89C0C;
 }
 
-h3, .h3 {
-/*color: #666;*/
-
-	font-weight:300;
-}
 
 
 
