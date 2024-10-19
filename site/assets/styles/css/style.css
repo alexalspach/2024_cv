@@ -327,20 +327,29 @@ h1 a:active {
 
 .img-bd-tri-atlas-well-sticker
 {
-	height: 351px;
+	height: 372px;
   margin-right: -36px;
-  margin-top: -41px;
+  margin-top: -81px;
   margin-bottom: -20px;
   margin-left: 15px;
 }
 
 .img-punyo-heart-well-sticker
 {
-	height: 194px;
-  margin-left: 10px;
-  margin-top: 0px;
-  margin-right: -40px;
+	height: 204px;
+  margin-left: 5px;
+  margin-top: -17px;
+  margin-right: -44px;
   margin-bottom: -20px;
+}
+
+.img-bubble-loose-grips-well-sticker
+{
+	height: 205px;
+  margin-left: 0px;
+  margin-top: -125px;
+  margin-right: -25px;
+  margin-bottom: -80px;
 }
 
 
