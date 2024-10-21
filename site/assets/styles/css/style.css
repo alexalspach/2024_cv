@@ -764,7 +764,7 @@ table{
 td, th {
 	display: table-cell;
 	vertical-align: top;
-	padding-right: 5px;
+	padding-right: 10px;
 	min-width:60px;
 	/*width: 50px;*/
 }
@@ -777,13 +777,12 @@ td.table-title {
 
 td.year { 
 
-	margin-top:12px;
 
 	font-size: 20px;
 	font-weight: normal;
-
 	color: #777;
 
+	margin-top:12px;
 	padding-top: 0px;
 
 }
