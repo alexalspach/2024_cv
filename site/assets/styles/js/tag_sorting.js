@@ -32,6 +32,9 @@ function slide(slideDuration) {
 	$(".slide-down-tr" ).slideDown( slideDuration );
 	$(".fade-out" ).fadeOut( slideDuration );
 	$(".fade-in" ).fadeIn( slideDuration );
+	
+
+
 	//var timeoutID = window.setTimeout(slideUpAndDownDates, 500);
 	//$(".slide-up-tr" ).slideUp( 400 );
 	//$(".slide-down-tr" ).slideDown( 400 )

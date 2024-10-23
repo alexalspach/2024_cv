@@ -1,4 +1,6 @@
 <!-- 
+    featured
+
     all 
     videos
 
@@ -31,7 +33,14 @@
 <!-- http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki -->
 
 
+
+<!-- TAGS FOR SORTING PROJECTS -->
+
+
 <div id="tags" class="pull-right">
+
+    <div class="sort-button sort-featured btn btn-outline-inverse btn-xs btn-outline-inverse" title="Featured projects" onclick="tagSorting('featured')">FEATURED</div>
+
     <div class="sort-button sort-all btn btn-outline-inverse btn-xs btn-xs-active" title="Click here to see all projects and presentations" onclick="tagSorting('all')">all</div>
     
     <div id="sort-button-videos" class="sort-button sort-videos btn btn-outline-inverse btn-xs" onclick="tagSorting('videos')">videos</div>
@@ -61,21 +70,321 @@
     <div id="sort-button-tri" class="sort-button sort-tri btn btn-outline-inverse btn-xs" onclick="tagSorting('tri')">toyota (tri)</div>
     
 </div>
-<br>
-<br>
-
-
-<div id="includeProjectsPics"></div>
-<br>
 
 
 
+<!-- PROJECT PIC GRID -->
+
+  
+<div>
+  <ul id="da-thumbs" class="da-thumbs">
+  <!-- all humanoids mobilerobots pathplanning navigation computervision international designmfg hwdev swdev videos-->
 
 
-<h2>Projects<small> </small></h2>
-<br>
+  <!-- TRI -->
 
-<div id="toc-table" style="margin-left:20px">
+
+      <li class="sortable-div all tri soft tactile manipulation hri humanoids designmfg hwdev videos"> 
+          <a onclick="highlight('#Punyo_2')" href="#Punyo_2"> 
+              <img src="../assets/images/projects/thumbs/MeetPunyothumb_2.jpg" />
+              <div><span><strong>Punyo</strong><br>H/W Dev / Team Lead</span></div>
+          </a>  
+      </li>  
+
+
+      <li class="sortable-div all tri soft tactile manipulation hri humanoids designmfg hwdev videos"> 
+          <a onclick="highlight('#Punyo_1')" href="#Punyo_1"> 
+              <img src="../assets/images/projects/thumbs/Punyo1thumb.jpg" />
+              <div><span><strong>Punyo-1</strong><br>H/W Dev / Team Lead</span></div>
+          </a>  
+      </li>  
+    
+
+     <li class="sortable-div all hri designmfg hwdev videos"> 
+          <a onclick="highlight('#AudreyIII')" href="#AudreyIII"> 
+              <img src="../assets/images/projects/thumbs/AudreyIII1thumb.jpg" />
+              <div><span><strong>Audrey III</strong><br>Halloween Party Robot Speed Project</span></div>
+          </a>  
+      </li>            
+
+     <li class="sortable-div all soft tactile manipulation hri tri disney humanoids international designmfg hwdev swdev"> 
+          <a onclick="highlight('#CWBB1')" href="#CWBB1"> 
+              <img src="../assets/images/projects/thumbs/CWBB1thumb.jpg" />
+              <div><span><strong>CWBB?</strong><br>Workshop Organizer</span></div>
+          </a>  
+      </li>                        
+
+      <li class="sortable-div all tri soft tactile manipulation hri designmfg hwdev videos"> 
+          <a onclick="highlight('#SoftBubbleGrip1')" href="#SoftBubbleGrip1"> 
+              <img src="../assets/images/projects/thumbs/BubbleGripper1thumb.jpg" />
+              <div><span><strong>Soft-Bubble Grippers</strong><br>H/W Dev, Team Lead</span></div>
+          </a>  
+      </li>  
+
+
+      <li class="sortable-div all tri soft manipulation designmfg hwdev videos"> 
+          <a onclick="highlight('#DishLoading')" href="#DishLoading"> 
+              <img src="../assets/images/projects/thumbs/Finrays1thumb.jpg" />
+              <div><span><strong>Compliant Fingers for Manipulation</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all tri soft tactile manipulation designmfg hwdev videos"> 
+          <a onclick="highlight('#DenseGeom')" href="#DenseGeom"> 
+              <img src="../assets/images/projects/thumbs/DenseGeom2thumb.jpg" />
+              <div><span><strong>Visuotactile Geometry Sensing</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all disney soft tactile manipulation hri humanoids designmfg hwdev videos"> 
+          <a onclick="highlight('#SoftArm1')" href="#SoftArm1"> 
+              <img src="../assets/images/projects/thumbs/SoftHand1thumb.jpg" />
+              <div><span><strong>Soft Robotic Hand and Arm</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+
+
+  <!-- Disney -->
+
+
+      <li class="sortable-div all disney designmfg hwdev videos"> 
+          <a onclick="highlight('#DesignOpt1')" href="#DesignOpt1"> 
+              <img src="../assets/images/projects/thumbs/Tetrabot1thumb.jpg" />
+              <div><span><strong>Tetrabot</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all disney designmfg hwdev videos"> 
+          <a onclick="highlight('#SnapBot1')" href="#SnapBot1"> 
+              <img src="../assets/images/projects/thumbs/Snapbot1thumb.jpg" />
+              <div><span><strong>Snapbot: A Reconfigurable Legged Robot</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all disney designmfg hwdev videos">            
+          <a onclick="highlight('#DesignOpt1')" href="#DesignOpt1"> 
+              <img src="../assets/images/projects/thumbs/DesignOpt1thumb.jpg" />
+              <div><span><strong>Task-based Robot Design Optimization</strong><br>H/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all disney hri soft hwdev swdev designmfg">            
+          <a onclick="highlight('#HuggingStudy')" href="#HuggingStudy"> 
+              <img src="../assets/images/projects/thumbs/HuggingStudy2thumb.jpg" />
+              <div><span><strong>Children's Hugging Study</strong><br>H/W and S/W Dev</span></div>
+          </a>  
+      </li>  
+
+      <li class="sortable-div all disney wearable hwdev designmfg videos">            
+          <a onclick="highlight('#EMComm')" href="#EMComm"> 
+              <img src="../assets/images/projects/thumbs/EMComm1thumb.jpg" />
+              <div><span><strong>EM-Comm</strong><br>H/W Dev</span></div>
+          </a>  
+      </li> 
+
+
+      <li class="sortable-div all hri disney humanoids soft tactile manipulation hwdev designmfg videos">            
+          <a onclick="highlight('#SoftUpper')" href="#SoftUpper"> <!-- Highlighting doesnt work. Because its called from a different file? -->
+              <img src="../assets/images/projects/thumbs/SoftUpper2thumb.jpg" />
+              <div><span><strong>Soft Upper Body</strong><br>Design and Dev</span></div>
+          </a>  
+      </li>                     
+
+      <li class="sortable-div all hri disney humanoids soft tactile manipulation hwdev designmfg videos">            
+          <a onclick="highlight('#SoftSkin')" href="#SoftSkin"> <!-- Highlighting doesnt work. Because its called from a different file? -->
+              <img src="../assets/images/projects/thumbs/softskin1thumb.jpg" />
+              <div><span><strong>3D Printed Soft Skin</strong><br>Design and Dev</span></div>
+          </a>  
+      </li>   
+
+      <li class="sortable-div all hwdev designmfg videos">            
+          <a onclick="highlight('#Earduino')" href="#Earduino"> <!-- Highlighting doesnt work. Because its called from a different file? -->
+              <img src="../assets/images/projects/thumbs/Earduino1thumb.jpg" />
+              <div><span><strong>Earduino</strong><br>Making Things Interactive Speed Project</span></div>
+          </a>  
+      </li>   
+
+                        <!-- SimLab 2014 -->
+
+      <li class="sortable-div all simlab pathplanning international swdev videos">            
+          <a onclick="highlight('#ActiveStudio')" href="#ActiveStudio"> <!-- Highlighting doesnt work. Because its called from a different file? -->
+              <img src="../assets/images/projects/thumbs/ActiveStudio1thumb.jpg" />
+              <div><span><strong>ActiveStudio</strong><br>Robot Animation Interfaces</span></div>
+          </a>  
+      </li>
+
+
+      <li class="sortable-div all simlab hwdev swdev designmfg international tactile manipulation videos">                      
+          <a onclick="highlight('#AllegroHand')" href="#AllegroHand"> <!-- Highlighting doesnt work. Because its called from a different file? -->
+              <img src="../assets/images/projects/thumbs/AllegroHand1thumb.jpg" />
+              <div><span><strong>Allegro Hand</strong><br>H/W and S/W Dev</span></div>
+          </a>  
+      </li>
+      
+      <li class="sortable-div all simlab hwdev designmfg international manipulation videos">                                                
+          <a onclick="highlight('#AllegroArm')"  href="#AllegroArm">
+              <img src="../assets/images/projects/thumbs/AllegroArm2thumb.jpg" />
+              <div><span><strong>Allegro Arm</strong><br>H/W Dev</span></div>
+          </a>
+      </li>
+                          
+      <li class="sortable-div all simlab hwdev designmfg international videos">                                             
+          <a onclick="highlight('#AllegroDog')" href="#AllegroDog">
+              <img src="../assets/images/projects/thumbs/AllegroDog1thumb.jpg" />
+              <div><span><strong>Allegro Dog</strong><br>Development and Customer Training</span></div>
+          </a>
+      </li>
+      
+                        
+  
+  
+      <li class="sortable-div all thesis humanoids hwdev swdev ">
+          <a href="#HumanoidPushing">
+              <img src="../assets/images/projects/thumbs/HumanoidPushing1thumb.jpg" />
+              <div><span><strong>Humanoid Pushing</strong><br>Masters Research</span></div>
+          </a>
+      </li>
+      
+      <li class="sortable-div all humanoids mobilerobots navigation computervision videos designmfg hwdev swdev">
+          <a href="#DARwInDrives">
+              <img src="../assets/images/projects/thumbs/DarwinDriving1thumb.jpg" />
+              <div><span><strong>DARwIn-OP Driving</strong><br>a Roomba!</span></div>
+          </a>
+      </li>
+      
+      <li class="sortable-div all humanoids videos">
+          <a href="#HuboThrowing">
+              <img src="../assets/images/projects/thumbs/HumanoidThrowing2thumb.jpg" />
+              <div><span><strong>Hubo Throwing</strong><br>the First Pitch for the Phillies</span></div>
+          </a>
+      </li>                     
+                                             
+      <li class="sortable-div all humanoids designmfg">
+          <a href="#MiniFT">
+              <img src="../assets/images/projects/thumbs/MiniFTfeet1thumb.jpg" />
+              <div><span><strong>Mini Humanoid</strong><br>F/T Sensors</span></div>
+          </a>
+      </li>
+      
+      <li class="sortable-div all mobilerobots hwdev swdev videos">
+          <a href="#Legway">
+              <img src="../assets/images/projects/thumbs/Legway1thumb.jpg" />
+              <div><span><strong>LEGO Wheeled</strong><br>Inverted Pendulum</span></div>
+          </a>
+      </li>
+
+
+
+      <li class="sortable-div all mobilerobots navigation pathplanning computervision swdev">
+          <a href="#MobileRobots2">
+              <img src="../assets/images/projects/thumbs/TreasureHunt1thumb.jpg" />
+              <div><span><strong>Mobile Robot</strong><br>Vision and Navigation</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all mobilerobots navigation international swdev videos">                      
+          <a href="#LearningSyRoTek">
+              <img src="../assets/images/projects/thumbs/SND1thumb.jpg" />
+              <div><span><strong>Mobile Navigation</strong><br>using Smooth Nearness Diagram</span></div>
+          </a>
+      </li>
+      
+      
+      
+      <li class="sortable-div all humanoids international videos">                      
+          <a href="#6NewHubos">
+              <img src="../assets/images/projects/thumbs/SixHubos1thumb.jpg" />
+              <div><span><strong>Six HUBOs</strong><br>at Drexel</span></div>
+          </a>
+      </li>                      
+      
+      
+      
+      
+      <li class="sortable-div all humanoids videos hwdev swdev designmfg">                      
+          <a href="#MiddleSISTR">
+              <img src="../assets/images/projects/thumbs/MiddleSISTR1thumb.jpg" />
+              <div><span><strong>3-Axis Gantry</strong><br>for Mini Humanoids</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all humanoids international">             
+          <a href="#HumanoidRobotCollaborativeDocumentation2">
+              <img src="../assets/images/projects/thumbs/HUBOCollabDocs1thumb.jpg" />
+              <div><span><strong>HUBO Wiki</strong><br>Collaborative Documentation</span></div>
+          </a>
+           
+      </li>
+      <li class="sortable-div all humanoids pathplanning navigation swdev videos">                      
+          <a href="#MiniatureHumanoidManipulation">
+              <img src="../assets/images/projects/thumbs/MiniManipulation1thumb.jpg" />
+              <div><span><strong>Mini Humanoid</strong><br>Path Planning and Manipulation</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all hwdev designmfg videos">                      
+          <a href="#MEM435ProductDev">
+              <img src="../assets/images/projects/thumbs/KangarooLeg1thumb.jpg" />
+              <div><span><strong>Product Development</strong><br>Jumping Kangaroo Leg</span></div>
+          </a>
+      </li>                      
+      <li class="sortable-div all international swdev navigation computervision videos">                        
+          <a href="#RoboticsLabEval">
+              <img src="../assets/images/projects/thumbs/rLabTutorials2thumb.jpg" />
+              <div><span><strong>RoboticsLab</strong><br>Evaluation and Tutorials</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all humanoids international">                     
+          <a href="#STEMHumanoidRobots">
+              <img src="../assets/images/projects/thumbs/SuwonStemPres1thumb.jpg" />
+              <div><span><strong>STEM &amp; Humanoids</strong><br>Pres. in Suwon, S. Korea</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all mobilerobots international videos">                       
+          <a href="#HuboQ">
+              <img src="../assets/images/projects/thumbs/HuboQ3thumb.jpg" />
+              <div><span><strong>HuboQ</strong><br>Dynamic Mobile Robot</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all humanoids international">                     
+          <a href="#HUBO2HumanoidRobot2">
+              <img src="../assets/images/projects/thumbs/KaistStem1thumb.jpg" />
+              <div><span><strong>STEM w/ HUBO2</strong><br>at KAIST in Daejeon, S. Korea</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all humanoids pathplanning navigation swdev videos">                      
+          <a href="#MiniatureHumanoidPathPlanning">
+              <img src="../assets/images/projects/thumbs/MiniHuboAIII1thumb.jpg" />
+              <div><span><strong>Mini Humanoid</strong><br>Path Planning and Dynamic Walking</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all mobilerobots pathplanning navigation swdev videos">                       
+          <a href="#MobileRobots1">
+              <img src="../assets/images/projects/thumbs/MobileNavigation1thumb.jpg" />
+              <div><span><strong>Mobile Robot</strong><br>Mapping and Navigation</span></div>
+          </a>
+      </li>
+      <li class="sortable-div all humanoids hwdev designmfg videos">                        
+          <a href="#MiniHuboMfg">
+              <img src="../assets/images/projects/thumbs/MiniHuboMfg2thumb.jpg" />
+              <div><span><strong>Mini Humanoid</strong><br>Manufacturing</span></div>
+          </a>
+      </li>
+
+      <li class="sortable-div all hwdev designmfg">                                             
+          <a href="#SynexWearTest">
+              <img src="../assets/images/projects/thumbs/Synex1thumb.jpg" />
+              <div><span><strong>Spinal Implant</strong><br>Failure Analysis</span></div>
+          </a>
+      </li>
+  </ul>
+</div>
+
+
+
+
+
+<div><h2>Projects</h2></div>
+
+<div id="toc-table" style="margin-left:20px" class="sortable-div all videos soft tactile manipulation hri humanoids wearable mobilerobots pathplanning navigation computervision designmfg hwdev swdev international korea tri disney simlab drexel hubolab">
     <table>
 
 
@@ -87,8 +396,8 @@
                 <ul>
 
                     <div class="sortable-div all tri manipulation humanoids">
-                        <a onclick="highlight('#secretsauce')" href="#secretsauce" title="secretsauce">
-                            <li>Secret Sauce (TBA)</li>
+                        <a onclick="highlight('#bd_tri')" href="#bd_tri" title="bd_tri">
+                            <li>Boston Dynamics and Toyota Research Team Up on Robots</li>
                         </a>
                     </div>
                  
@@ -504,15 +813,78 @@
     </table>
 </div>
 
-<br>
-<br>
 
 
 
 <!-- =========================================================================================================================================== -->
 
 
-<div class="sortable-div all tri manipulation humanoids">
+<!--
+  ____  _____            _______ _____  _____ 
+ |  _ \|  __ \     _    |__   __|  __ \|_   _|
+ | |_) | |  | |  _| |_     | |  | |__) | | |  
+ |  _ <| |  | | |_   _|    | |  |  _  /  | |  
+ | |_) | |__| |   |_|      | |  | | \ \ _| |_ 
+ |____/|_____/             |_|  |_|  \_\_____|
+-->
+
+<div class="sortable-div featured all tri manipulation humanoids">
+
+    <div class="well" name="bd_tri" id="bd_tri">
+
+        <div class="project-title">Boston Dynamics and Toyota Research Team Up on Robots</div>
+
+        <div class="media-flex-container">
+
+            <div style="width:80%;">
+
+                <div class="project-description">
+                    <strong>On-site Manager and Whole-Body Manipuation Advocate.</strong> The project is designed to leverage the strengths and expertise of each partner equally. The physical capabilities of the new electric Atlas robot, coupled with the ability to programmatically command and teleoperate a broad range of whole-body bimanual manipulation behaviors, will allow research teams to deploy the robot across a range of tasks and collect data on its performance. This data will, in turn, be used to support the training of advanced LBMs, utilizing rigorous hardware and simulation evaluation to demonstrate that large, pre-trained models can enable the rapid acquisition of new robust, dexterous, whole-body skills.
+                </div>
+
+                <div id="link-table">
+                    <table>
+                        <tr>
+                            <td class="table-title"><span class="label label-info pull-right"> press </span></td>
+                            <td><a target="_blank" href="https://pressroom.toyota.com/boston-dynamics-and-toyota-research-institute-announce-partnership-to-advance-robotics-research/">Toyota: BD and TRI Announce Partnership to Advance Robotics Research</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-title"><span class="label label-info pull-right"> press </span></td>
+                            <td><a target="_blank" href="https://spectrum.ieee.org/boston-dynamics-toyota-research">IEEE Spectrum: Boston Dynamics and Toyota Research Team Up on Robots</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-title"><span class="label label-info pull-right"> press </span></td>
+                            <td><a target="_blank" href="https://archive.is/3TWtU">Bloomberg: Toyota Joins With Hyundai's Boston Dynamics on AI-Powered Robots</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-title"><span class="label label-info pull-right"> press </span></td>
+                            <td><a target="_blank" href="https://techcrunch.com/2024/10/16/boston-dynamics-teams-with-tri-to-bring-ai-smarts-to-atlas-humanoid-robot/">TechCrunch: BD teams with TRI to bring AI smarts to Atlas humanoid robot</a></td>
+                        </tr>                            
+
+                    </table>
+                </div>
+
+            </div>
+
+            <div style="flex-grow: 1;">
+                <img loading="lazy" class="sticker-shadow hvr-grow-rotate img-bd-tri-atlas-well-sticker" src="../assets/images/projects/Punyo/PunyoAtlasWatermelonSmall.png" alt="Early Punyo Concept Art">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!--
+<div class="sortable-div all tri manipulation humanoids featured">
     <div class="well" name="secretsauce" id="secretsauce">
 
         <div class="project-title">Secret Sauce (TBA)</div>
@@ -520,19 +892,20 @@
         <div class="well-media" style="margin-top: 5px; margin-bottom: 10px;">
 
           <ink data-type="more-blurred ease-in">
-            <img loading="lazy" style="margin-right: -15px; width: 15%;" class="" src="../photos/emojis/mechanical-arm_1f9be.png" alt="">
+            <img loading="lazy" style="margin-right: -15px; width: 15%;" class="" src="../assets/images/emojis/mechanical-arm_1f9be.png" alt="">
           </ink>
           <ink data-type="more-blurred ease-in">
-            <img loading="lazy" style="width: 15%;" class="" src="../photos/emojis/zipper-mouth-face_1f910.png" alt="">
+            <img loading="lazy" style="width: 15%;" class="" src="../assets/images/emojis/zipper-mouth-face_1f910.png" alt="">
           </ink>
           <ink data-type="more-blurred ease-in">
-            <img loading="lazy" style="margin-left: -15px; width: 15%; -webkit-transform: scaleX(-1); transform: scaleX(-1);" class="" src="../photos/emojis/mechanical-arm_1f9be.png" alt="">
+            <img loading="lazy" style="margin-left: -15px; width: 15%; -webkit-transform: scaleX(-1); transform: scaleX(-1);" class="" src="../assets/images/emojis/mechanical-arm_1f9be.png" alt="">
           </ink>
 
         </div>
 
     </div>
 </div>
+-->
 
 
 <!--
@@ -544,15 +917,13 @@
  |_|  |_|______|______|  |_|    |_|     \____/|_| \_|  |_|  \____/                                                                   
 -->
 
-<div class="sortable-div all tri soft tactile manipulation hri designmfg hwdev humanoids videos">
+<div class="sortable-div featured all tri soft tactile manipulation hri designmfg hwdev humanoids videos">
     <div class="well" name="Punyo_2" id="Punyo_2">
 
         <div class="project-title">Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research</div>
-        <br>
 
         <p><strong>I led a passionate, multidisciplinary team on a mission to help with everyday tasks that require more than just our hands and fingertips.</strong> Our research platform, Punyo, embodies this mission. The Punyo team is focused on bulky object manipulation using the arms and chest to complement TRI’s other efforts in fine robot hand- and gripper-based dexterity. We are developing hardware and algorithms that enable truly capable robots to help with large, heavy, and unwieldy items. <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8">[Read More]</a></p>
 
-        <br>
 
         <div id="link-table">
             <table>
@@ -598,7 +969,7 @@
         <div class="well-media">
 
             <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8">
-                <img loading="lazy" class="media-img-fullwidth media-shadow hvr-grow-float" src="../photos/projects/Punyo/Punyo2ReadMorethumb2.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-img-fullwidth media-shadow hvr-grow-float" src="../assets/images/projects/Punyo/Punyo2ReadMorethumb2.jpg" alt="Early Punyo Concept Art">
             </a>
 
             <div class="media-youtube-fullwidth media-shadow">
@@ -607,58 +978,54 @@
             </div>            
 
             <div class="media-flex-container">
-                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt1thumb.jpg" alt="Early Punyo Concept Art">
-                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt2thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt1thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt2thumb.jpg" alt="Early Punyo Concept Art">
             </div>
 
             <div class="media-flex-container">
-                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt7thumb.jpg" alt="Early Punyo Concept Art">
-                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt6thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt7thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt6thumb.jpg" alt="Early Punyo Concept Art">
             </div>
 
             <div class="media-flex-container">
-                <img loading="lazy" style="height: 242.8px" class="media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt8thumb.jpg" alt="Early Punyo Concept Art">
-                <img loading="lazy" style="height: 242.8px" class="media-shadow hvr-shadow" src="../photos/projects/Punyo/Punyo2ConceptArt9thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" style="height: 242.8px" class="media-flex-img media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt8thumb.jpg" alt="Early Punyo Concept Art">
+                <img loading="lazy" style="height: 242.8px" class="media-flex-img media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt9thumb.jpg" alt="Early Punyo Concept Art">
             </div>
 
 
-            <p style="text-align: left; ">Art above by <a target="_blank" href="https://www.willustrator.com/home">Will Knight</a> &nbsp / &nbsp Art below by <a target="_blank" href="https://www.instagram.com/reediculous.tattoos/">Reed Alspach</a> &nbsp / &nbsp Character design by Will and Alex</p>
+            <p style="text-align: left; margin-top: 10px;">Art above by <a target="_blank" href="https://www.willustrator.com/home">Will Knight</a> &nbsp / &nbsp Art below by <a target="_blank" href="https://www.instagram.com/reediculous.tattoos/">Reed Alspach</a> &nbsp / &nbsp Character design by Will and Alex</p>
 
             <!--<div class="media-flex-container media-shadow" style="background-color: white; padding-bottom: 10px;">-->
             <div class="media-flex-container media-shadow">    
-                <img loading="lazy" class="media-shadow hvr-grow-rotate-opp" style="width:32%" src="../photos/projects/Punyo/Punyo2Mission1embroidered_rotated.png" alt="Early Punyo Concept Art">
-                <img loading="lazy" class="media-shadow hvr-grow-rotate-opp" style="width:37%" src="../photos/projects/Punyo/Punyo2tradheart.png" alt="Early Punyo Concept Art">
-                <img loading="lazy" class="media-shadow hvr-grow-rotate" style="width:32%" src="../photos/projects/Punyo/Punyo2Mission2embroidered_rotated.png" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-shadow hvr-grow-rotate-opp" style="width:32%" src="../assets/images/projects/Punyo/Punyo2Mission1embroidered_rotated.png" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-shadow hvr-grow-rotate-opp" style="width:37%" src="../assets/images/projects/Punyo/Punyo2tradheart.png" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-shadow hvr-grow-rotate" style="width:32%" src="../assets/images/projects/Punyo/Punyo2Mission2embroidered_rotated.png" alt="Early Punyo Concept Art">
             </div>
 
-            <br>
 
-            <div class="media-flex-container">
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/PunyoTeamPhotoMarchDemo.jpg">
-                    <img style="border-radius: 10px; transform: rotate(-4deg) scale(1.0); z-index: 99; outline: 4px solid white;" loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/PunyoTeamPhotoMarchDemohalfthumb.jpg" alt="Punyo Team Photo">
+            <div class="media-flex-container" style="margin-top: 20px;">
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/PunyoTeamPhotoMarchDemo.jpg">
+                    <img style="border-radius: 10px; transform: rotate(-4deg) scale(1.0); z-index: 99; outline: 4px solid white;" loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/PunyoTeamPhotoMarchDemohalfthumb.jpg" alt="Punyo Team Photo">
                 </a>
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/PunyoTeamPhoto.jpg">
-                    <img style="border-radius: 10px; transform: rotate(4deg) scale(1.07) translateY(2px); outline: 4px solid white;" loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../photos/projects/Punyo/PunyoTeamPhotohalfthumb.jpg" alt="Punyo Team Photo">
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/PunyoTeamPhoto.jpg">
+                    <img style="border-radius: 10px; transform: rotate(4deg) scale(1.07) translateY(2px); outline: 4px solid white;" loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/PunyoTeamPhotohalfthumb.jpg" alt="Punyo Team Photo">
                 </a>
             </div>
-            <br><br>
-            <p><strong>The Punyo Team:</strong><br>Alex Alspach (Tech Lead), Andrew Beaulieu (Tech Lead), Kate Tsui (HRI Tech Lead),<br>Jose Barreiros, Aditya Bhat, Bisi Chikwendu, Sam Creasey, Eric Dusel, Aimee Goncalves,<br>Manabu Nishiura, Aykut Önol, and Leticia Priebe Rocha</p>            
+            
+            <div style="margin-top:30px">
+              <p><strong>The PUNYO Team</strong><br>Alex Alspach (Tech Lead), Andrew Beaulieu (Tech Lead), Kate Tsui (HRI Tech Lead),<br>Jose Barreiros, Aditya Bhat, Bisi Chikwendu, Sam Creasey, Eric Dusel, Aimee Goncalves,<br>Manabu Nishiura, Aykut Önol, and Leticia Priebe Rocha<br><strong>ぷにょ</strong></p>    
+            </div>        
 
-            <br><br>
-
-            <div class="media-flex-container">
+            <div class="media-flex-container" style="margin-top: 20px;">
               <center>
-                <img loading="lazy" class="media-shadow hvr-grow" style="width:60%; margin:-25px 0 0px;" src="../photos/projects/Punyo/Punyo2tradbubbles.png" alt="Early Punyo Concept Art">
+                <img loading="lazy" class="media-shadow hvr-grow" style="width:60%;" src="../assets/images/projects/Punyo/Punyo2tradbubbles.png" alt="Early Punyo Concept Art">
               </center>
             </div>
-
-            <br>
-
-            <div class="media-flex-container">
-              <center>
-                <img loading="lazy" class="media-shadow hvr-grow" style="width:60%; " src="../photos/projects/Punyo/Punyo_wordart.png" alt="Punyo logo">
-              </center>
-            </div>            
+        
+            <center>
+              <img loading="lazy" class="media-shadow hvr-grow" style="width:250px; margin-top:20px" src="../assets/images/projects/Punyo/Punyo_wordart.png" alt="Punyo logo">
+            </center>
+                  
 
 
         </div>
@@ -740,7 +1107,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> 2018 </span></td>
-                    <td><a target="_blank" href="http://baymax.org/workshop/2018/">Fail-Safe HW & SW and Learning in Humanoid Robots</a></td>
+                    <td><a target="_blank" href="http://baymax.org/workshop/2018/">Fail-Safe HW &amp; SW and Learning in Humanoid Robots</a></td>
                 </tr>
 
                 <tr>
@@ -764,7 +1131,7 @@
         <!--
         <center>
             <div class="well-media">
-                 <img loading="lazy" class="media-img-fullwidth" src="../photos/projects/thumbs_lg/CWBB1thumb.jpg" alt="1" />
+                 <img loading="lazy" class="media-img-fullwidth" src="../assets/images/projects/thumbs_lg/CWBB1thumb.jpg" alt="1" />
             </div>
         </center>
       -->
@@ -772,7 +1139,7 @@
 
       <div class="well-media">
         <a style="display: contents" target="_blank" href="https://baymax.org/workshop/2024/">
-          <img loading="lazy" class="media-img-fullwidth media-shadow" src="../photos/projects/thumbs_lg/CWBB2024thumb.jpg" alt="Can we build Baymax? 9">
+          <img loading="lazy" class="media-img-fullwidth media-shadow" src="../assets/images/projects/thumbs_lg/CWBB2024thumb.jpg" alt="Can we build Baymax? 9">
         </a> 
       </div>                 
 
@@ -827,14 +1194,14 @@
             </div>
 
             <div class="media-flex-container">
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/Punyo11.jpg">
-                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../photos/projects/Punyo/Punyo1thumb.jpg" alt="Punyo 1 1"></a>
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/Punyo13.jpg">
-                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../photos/projects/Punyo/Punyo3thumb.jpg" alt="Punyo 1 2"></a>
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/Punyo12.jpg">
-                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../photos/projects/Punyo/Punyo2thumb.jpg" alt="Punyo 1 3"></a>
-                <a style="display: contents" target="_blank" href="../photos/projects/Punyo/Punyo14.jpg">
-                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../photos/projects/Punyo/Punyo4thumb.jpg" alt="Punyo 1 4"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/Punyo11.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/Punyo/Punyo1thumb.jpg" alt="Punyo 1 1"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/Punyo13.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/Punyo/Punyo3thumb.jpg" alt="Punyo 1 2"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/Punyo12.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/Punyo/Punyo2thumb.jpg" alt="Punyo 1 3"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/Punyo14.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/Punyo/Punyo4thumb.jpg" alt="Punyo 1 4"></a>
             </div>
 
         </div>
@@ -1016,12 +1383,12 @@
                     </iframe>
                 </div>
 
-                <a target="_blank" href="https://punyo.tech"><img loading="lazy" class="media-img-fullwidth media-shadow" src="../photos/projects/thumbs_lg/BubbleGripperBuild1thumb.jpg" alt="1" /></a>
+                <a target="_blank" href="https://punyo.tech"><img loading="lazy" class="media-img-fullwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripperBuild1thumb.jpg" alt="1" /></a>
 
-                <a target="_blank" href="../photos/projects/BubbleGripper/BubbleGripper1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/BubbleGripper1thumb.jpg" alt="1" /></a>
-                <a target="_blank" href="../photos/projects/BubbleGripper/BubbleGripper5.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/BubbleGripper5thumb.jpg" alt="2" /></a>
-                <a target="_blank" href="../photos/projects/BubbleGripper/BubbleGripper3.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/BubbleGripper3thumb.jpg" alt="3" /></a>
-                <a target="_blank" href="../photos/projects/BubbleGripper/BubbleGripper4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/BubbleGripper4thumb.jpg" alt="4" /></a>
+                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper1thumb.jpg" alt="1" /></a>
+                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper5.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper5thumb.jpg" alt="2" /></a>
+                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper3thumb.jpg" alt="3" /></a>
+                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper4thumb.jpg" alt="4" /></a>
 
             </div>
         </center>
@@ -1083,11 +1450,11 @@
             <div class="well-media">
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/Finrays/Finrays1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Finrays1thumb.jpg" alt="Version 2" /></a>
-                    <a target="_blank" href="../photos/projects/Finrays/Finrays3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Finrays3thumb.jpg" alt="Version 3" /></a>
+                    <a target="_blank" href="../assets/images/projects/Finrays/Finrays1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Finrays1thumb.jpg" alt="Version 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/Finrays/Finrays3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Finrays3thumb.jpg" alt="Version 3" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/Finrays/Finrays4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Finrays4thumb.jpg" alt="Version 4" /></a>
-                    <a target="_blank" href="../photos/projects/Finrays/Finrays2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Finrays2thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/Finrays/Finrays4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Finrays4thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/Finrays/Finrays2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Finrays2thumb.jpg" alt="Version 4" /></a>
                 </div>
 
                 <div class="well-youtube">
@@ -1182,11 +1549,11 @@
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DenseGeometry/DenseGeom2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DenseGeom2thumb.jpg" alt="Version 2" /></a>
-                    <a target="_blank" href="../photos/projects/DenseGeometry/DenseGeom1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DenseGeom1thumb.jpg" alt="Version 3" /></a>
+                    <a target="_blank" href="../assets/images/projects/DenseGeometry/DenseGeom2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DenseGeom2thumb.jpg" alt="Version 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/DenseGeometry/DenseGeom1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DenseGeom1thumb.jpg" alt="Version 3" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DenseGeometry/DenseGeom4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DenseGeom4thumb.jpg" alt="Version 4" /></a>
-                    <a target="_blank" href="../photos/projects/DenseGeometry/DenseGeom3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DenseGeom3thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DenseGeometry/DenseGeom4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DenseGeom4thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DenseGeometry/DenseGeom3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DenseGeom3thumb.jpg" alt="Version 4" /></a>
                 </div>
 
             </div>
@@ -1245,11 +1612,11 @@
             <div class="well-media">
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DisneySoftArm/SoftArm3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftArm3thumb.jpg" alt="Version 2" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftArm/SoftArm2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftArm2thumb.jpg" alt="Version 3" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftArm/SoftArm3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftArm3thumb.jpg" alt="Version 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftArm/SoftArm2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftArm2thumb.jpg" alt="Version 3" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DisneySoftArm/SoftArm1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftArm1thumb.jpg" alt="Version 4" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftArm/SoftArm4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftArm4thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftArm/SoftArm1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftArm1thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftArm/SoftArm4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftArm4thumb.jpg" alt="Version 4" /></a>
                 </div>
 
 
@@ -1315,11 +1682,11 @@
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DisneySnapbot/Snapbot2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Snapbot2thumb.jpg" alt="Version 2" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySnapbot/Snapbot3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Snapbot3thumb.jpg" alt="Version 3" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySnapbot/Snapbot2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Snapbot2thumb.jpg" alt="Version 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySnapbot/Snapbot3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Snapbot3thumb.jpg" alt="Version 3" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DisneySnapbot/Snapbot4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Snapbot4thumb.jpg" alt="Version 4" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySnapbot/Snapbot1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Snapbot5thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySnapbot/Snapbot4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Snapbot4thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySnapbot/Snapbot1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Snapbot5thumb.jpg" alt="Version 4" /></a>
                 </div>
 
             </div>
@@ -1435,7 +1802,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pic </span></td>
-                    <td><a target="_blank" href="../photos/projects/DisneyDesignOptimization/2017-Alspach_Ha_Kim-RSS-Finalist.jpg">Best Paper Award Finalists</a> <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                    <td><a target="_blank" href="../assets/images/projects/DisneyDesignOptimization/2017-Alspach_Ha_Kim-RSS-Finalist.jpg">Best Paper Award Finalists</a> <i class="fa fa-trophy" aria-hidden="true"></i></td>
                 </tr>
 
                 <tr>
@@ -1558,10 +1925,10 @@
         <center>
             <div class="well-media">
 
-                <a target="_blank" href="../photos/projects/DisneyHuggingStudy/HuggingStudy1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HuggingStudy1thumb.jpg" alt="Hugging Study Doll" /></a>
-                <a target="_blank" href="../photos/projects/DisneyHuggingStudy/HuggingStudy3.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HuggingStudy3thumb.jpg" alt="Hugging Data Vis. No Pressure" /></a>
-                <a target="_blank" href="../photos/projects/DisneyHuggingStudy/HuggingStudy4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HuggingStudy4thumb.jpg" alt="Hugging Data Vis. Squeeze" /></a>
-                <a target="_blank" href="../photos/projects/DisneyHuggingStudy/HuggingStudy2.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HuggingStudy2thumb.jpg" alt="Hugging Study Doll Guts" /></a>
+                <a target="_blank" href="../assets/images/projects/DisneyHuggingStudy/HuggingStudy1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HuggingStudy1thumb.jpg" alt="Hugging Study Doll" /></a>
+                <a target="_blank" href="../assets/images/projects/DisneyHuggingStudy/HuggingStudy3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HuggingStudy3thumb.jpg" alt="Hugging Data Vis. No Pressure" /></a>
+                <a target="_blank" href="../assets/images/projects/DisneyHuggingStudy/HuggingStudy4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HuggingStudy4thumb.jpg" alt="Hugging Data Vis. Squeeze" /></a>
+                <a target="_blank" href="../assets/images/projects/DisneyHuggingStudy/HuggingStudy2.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HuggingStudy2thumb.jpg" alt="Hugging Study Doll Guts" /></a>
 
             </div>
         </center>
@@ -1615,11 +1982,11 @@
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DisneyEMComm/EMComm1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/EMComm1thumb.jpg" alt="Version 2" /></a>
-                    <a target="_blank" href="../photos/projects/DisneyEMComm/EMComm2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/EMComm2thumb.jpg" alt="Version 3" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneyEMComm/EMComm1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/EMComm1thumb.jpg" alt="Version 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneyEMComm/EMComm2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/EMComm2thumb.jpg" alt="Version 3" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DisneyEMComm/EMComm3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/EMComm3thumb.jpg" alt="Version 4" /></a>
-                    <a target="_blank" href="../photos/projects/DisneyEMComm/EMComm4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/EMComm4thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneyEMComm/EMComm3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/EMComm3thumb.jpg" alt="Version 4" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneyEMComm/EMComm4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/EMComm4thumb.jpg" alt="Version 4" /></a>
                 </div>
 
 
@@ -1669,11 +2036,11 @@
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pic </span></td>
-                    <td><a target="_blank" href="../photos/projects/DisneySoftHumanoid/2015-Alspach_Kim-Humanoids-Finalist.jpg"><i class="fa fa-trophy" aria-hidden="true"></i> Best Oral Paper Award Finalists</a></td>
+                    <td><a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/2015-Alspach_Kim-Humanoids-Finalist.jpg"><i class="fa fa-trophy" aria-hidden="true"></i> Best Oral Paper Award Finalists</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pic </span></td>
-                    <td><a target="_blank" href="../photos/projects/DisneySoftHumanoid/2015-Alspach_Kim-Humanoids-Finalist-Certificate.jpg"><i class="fa fa-trophy" aria-hidden="true"></i> Best Oral Paper Award Finalist Certificate</a></td>
+                    <td><a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/2015-Alspach_Kim-Humanoids-Finalist-Certificate.jpg"><i class="fa fa-trophy" aria-hidden="true"></i> Best Oral Paper Award Finalist Certificate</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> workshop </span></td>
@@ -1711,11 +2078,11 @@
 
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DisneySoftHumanoid/SoftUpperBody5.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftUpperBody6thumb.jpg" alt="Force-Based Object Following" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftHumanoid/SoftUpperBody1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftUpperBody1thumb.jpg" alt="Gentle Soft Object Grasping" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/SoftUpperBody5.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftUpperBody6thumb.jpg" alt="Force-Based Object Following" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/SoftUpperBody1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftUpperBody1thumb.jpg" alt="Gentle Soft Object Grasping" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DisneySoftHumanoid/SoftUpperBody3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftUpperBody3thumb.jpg" alt="Soft Skin Modules Squeezed" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftHumanoid/SoftUpperBody4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftUpperBody4thumb.jpg" alt="Gentle Origami Grasping" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/SoftUpperBody3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftUpperBody3thumb.jpg" alt="Soft Skin Modules Squeezed" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftHumanoid/SoftUpperBody4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftUpperBody4thumb.jpg" alt="Gentle Origami Grasping" /></a>
                 </div>
 
                 <div class="well-youtube">
@@ -1814,11 +2181,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/DisneySoftSkin/SoftSkin1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftSkin1thumb.jpg" alt="Without Soft Skin" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftSkin/SoftSkin2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftSkin2thumb.jpg" alt="Soft Skin Control" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftSkin/SoftSkin1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftSkin1thumb.jpg" alt="Without Soft Skin" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftSkin/SoftSkin2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftSkin2thumb.jpg" alt="Soft Skin Control" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DisneySoftSkin/SoftSkin3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftSkin3thumb.jpg" alt="Soft Skin Paper" /></a>
-                    <a target="_blank" href="../photos/projects/DisneySoftSkin/SoftSkin4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/SoftSkin4thumb.jpg" alt="Soft Skin Tofu" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftSkin/SoftSkin3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftSkin3thumb.jpg" alt="Soft Skin Paper" /></a>
+                    <a target="_blank" href="../assets/images/projects/DisneySoftSkin/SoftSkin4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/SoftSkin4thumb.jpg" alt="Soft Skin Tofu" /></a>
                 </div>
 
 
@@ -1860,11 +2227,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/Earduino/Earduino1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Earduino1thumb.jpg" alt="Earduino with Speaker and Keys" /></a>
-                    <a target="_blank" href="../photos/projects/Earduino/Earduino2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Earduino2thumb.jpg" alt="Earduino gloss cover" /></a>
+                    <a target="_blank" href="../assets/images/projects/Earduino/Earduino1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Earduino1thumb.jpg" alt="Earduino with Speaker and Keys" /></a>
+                    <a target="_blank" href="../assets/images/projects/Earduino/Earduino2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Earduino2thumb.jpg" alt="Earduino gloss cover" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/Earduino/Earduino3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Earduino3thumb.jpg" alt="Earduino Teensy" /></a>
-                    <a target="_blank" href="../photos/projects/Earduino/Earduino4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/Earduino4thumb.jpg" alt="Earduino pocket" /></a>
+                    <a target="_blank" href="../assets/images/projects/Earduino/Earduino3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Earduino3thumb.jpg" alt="Earduino Teensy" /></a>
+                    <a target="_blank" href="../assets/images/projects/Earduino/Earduino4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/Earduino4thumb.jpg" alt="Earduino pocket" /></a>
                 </div>
 
                 <div class="well-youtube">
@@ -2002,11 +2369,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/AllegroHand/AllegroHandStanford.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroHandStanfordthumb.jpg" alt="Allegro Hand Stanford" /></a>
-                    <a target="_blank" href="../photos/projects/AllegroHand/AllegroHandKIST.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroHandKISTthumb.jpg" alt="Allegro Hand KIST" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroHand/AllegroHandStanford.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroHandStanfordthumb.jpg" alt="Allegro Hand Stanford" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroHand/AllegroHandKIST.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroHandKISTthumb.jpg" alt="Allegro Hand KIST" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/AllegroHand/AllegroHandEPFL.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroHandEPFLthumb.jpg" alt="Allegro Hand EPFL" /></a>
-                    <a target="_blank" href="../photos/projects/AllegroHand/AllegroHandUPC.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroHandUPCthumb.jpg" alt="Allegro Hand UPC" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroHand/AllegroHandEPFL.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroHandEPFLthumb.jpg" alt="Allegro Hand EPFL" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroHand/AllegroHandUPC.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroHandUPCthumb.jpg" alt="Allegro Hand UPC" /></a>
                 </div>
 
             </div>
@@ -2052,9 +2419,9 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <div class="well-media">
 
                 <div class="well-dual-pics">
-                    <a target="_blank" href="../photos/projects/AllegroArm/AllegroArm1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroArm1thumb.jpg" alt="Allegro Arm 1" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroArm/AllegroArm1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroArm1thumb.jpg" alt="Allegro Arm 1" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/AllegroArm/AllegroArm2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroArm2thumb.jpg" alt="Allegro Arm 2" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroArm/AllegroArm2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroArm2thumb.jpg" alt="Allegro Arm 2" /></a>
                 </div>
 
                 <div class="well-youtube">
@@ -2131,11 +2498,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/AllegroDog/AllegroDog3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroDog3thumb.jpg" alt="Allegro Dog" /></a>
-                    <a target="_blank" href="../photos/projects/AllegroDog/AllegroDog4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroDog4thumb.jpg" alt="Allegro Dog Power Management Unit" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroDog/AllegroDog3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroDog3thumb.jpg" alt="Allegro Dog" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroDog/AllegroDog4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroDog4thumb.jpg" alt="Allegro Dog Power Management Unit" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/AllegroDog/AllegroDog2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroDog2thumb.jpg" alt="SimLab and the Dogs" /></a>
-                    <a target="_blank" href="../photos/projects/AllegroDog/AllegroDog1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/AllegroDog1thumb.jpg" alt="Me and the Dogs" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroDog/AllegroDog2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroDog2thumb.jpg" alt="SimLab and the Dogs" /></a>
+                    <a target="_blank" href="../assets/images/projects/AllegroDog/AllegroDog1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/AllegroDog1thumb.jpg" alt="Me and the Dogs" /></a>
                 </div>
 
             </div>
@@ -2231,10 +2598,10 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
         <center>
             <div class="well-media">
 
-                <a target="_blank" href="../photos/projects/HumanoidPushing/HumanoidPushing1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HumanoidPushing1thumb.jpg" alt="Humanoid Pushing 1" /></a>
-                <a target="_blank" href="../photos/projects/HumanoidPushing/HumanoidPushing6.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HumanoidPushing6thumb.jpg" alt="Humanoid Pushing 6" /></a>
-                <a target="_blank" href="../photos/projects/HumanoidPushing/HumanoidPushing7.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HumanoidPushing7thumb.jpg" alt="Humanoid Pushing 7" /></a>
-                <a target="_blank" href="../photos/projects/HumanoidPushing/HumanoidPushing5.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/HumanoidPushing5thumb.jpg" alt="Humanoid Pushing 5" /></a>
+                <a target="_blank" href="../assets/images/projects/HumanoidPushing/HumanoidPushing1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HumanoidPushing1thumb.jpg" alt="Humanoid Pushing 1" /></a>
+                <a target="_blank" href="../assets/images/projects/HumanoidPushing/HumanoidPushing6.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HumanoidPushing6thumb.jpg" alt="Humanoid Pushing 6" /></a>
+                <a target="_blank" href="../assets/images/projects/HumanoidPushing/HumanoidPushing7.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HumanoidPushing7thumb.jpg" alt="Humanoid Pushing 7" /></a>
+                <a target="_blank" href="../assets/images/projects/HumanoidPushing/HumanoidPushing5.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/HumanoidPushing5thumb.jpg" alt="Humanoid Pushing 5" /></a>
 
             </div>
         </center>
@@ -2300,9 +2667,9 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-dual-pics">
-                    <a target="_blank" href="../photos/projects/DarwinDrives/DarwinDrives1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DarwinDrives1thumb.jpg" alt="Darwin Driving" /></a>
+                    <a target="_blank" href="../assets/images/projects/DarwinDrives/DarwinDrives1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DarwinDrives1thumb.jpg" alt="Darwin Driving" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/DarwinDrives/DarwinDrives2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/DarwinDrives2thumb.jpg" alt="Sean, Jane and I at ICRA" /></a>
+                    <a target="_blank" href="../assets/images/projects/DarwinDrives/DarwinDrives2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/DarwinDrives2thumb.jpg" alt="Sean, Jane and I at ICRA" /></a>
                 </div>
 
             </div>
@@ -2361,10 +2728,10 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-dual-pics">
-                    <!--<a target="_blank" href="../photos/projects/HumanoidThrowing/HumanoidThrowing3.jpg"><img loading="lazy" class="img-two-tall" src="../photos/projects/thumbs_lg/HumanoidThrowing3thumb.jpg" alt="Behind the scenes at Citizens Bank Park" /></a><br>-->
-                    <a target="_blank" href="../photos/projects/HumanoidThrowing/HumanoidThrowing4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/HumanoidThrowing4thumb.jpg" alt="HUBO going onto the Phillies' field" /></a>
+                    <!--<a target="_blank" href="../assets/images/projects/HumanoidThrowing/HumanoidThrowing3.jpg"><img loading="lazy" class="img-two-tall" src="../assets/images/projects/thumbs_lg/HumanoidThrowing3thumb.jpg" alt="Behind the scenes at Citizens Bank Park" /></a><br>-->
+                    <a target="_blank" href="../assets/images/projects/HumanoidThrowing/HumanoidThrowing4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/HumanoidThrowing4thumb.jpg" alt="HUBO going onto the Phillies' field" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/HumanoidThrowing/HumanoidThrowing5.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/HumanoidThrowing5thumb.jpg" alt="Dan, Rob and HUBO" /></a>
+                    <a target="_blank" href="../assets/images/projects/HumanoidThrowing/HumanoidThrowing5.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/HumanoidThrowing5thumb.jpg" alt="Dan, Rob and HUBO" /></a>
                 </div>
 
             </div>
@@ -2399,10 +2766,10 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
         <center>
             <div class="well-media">
 
-                <a target="_blank" href="../photos/projects/MiniFT/MiniFT1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniFT1thumb.jpg" alt="Darwin with F/T Foot" /></a>
-                <a target="_blank" href="../photos/projects/MiniFT/MiniFT2.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniFT2thumb.jpg" alt="Machined Foot" /></a>
-                <a target="_blank" href="../photos/projects/MiniFT/MiniFT4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniFT4thumb.jpg" alt="Darwin with the F/T feet attached" /></a>
-                <a target="_blank" href="../photos/projects/MiniFT/MiniFT5.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniFT5thumb.jpg" alt="Foot with F/T Sensor" /></a>
+                <a target="_blank" href="../assets/images/projects/MiniFT/MiniFT1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniFT1thumb.jpg" alt="Darwin with F/T Foot" /></a>
+                <a target="_blank" href="../assets/images/projects/MiniFT/MiniFT2.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniFT2thumb.jpg" alt="Machined Foot" /></a>
+                <a target="_blank" href="../assets/images/projects/MiniFT/MiniFT4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniFT4thumb.jpg" alt="Darwin with the F/T feet attached" /></a>
+                <a target="_blank" href="../assets/images/projects/MiniFT/MiniFT5.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniFT5thumb.jpg" alt="Foot with F/T Sensor" /></a>
 
             </div>
         </center>
@@ -2659,11 +3026,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/MiddleSISTR/MiddleSISTR2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiddleSISTR2thumb.jpg" alt="Building Gantry" /></a>
-                    <a target="_blank" href="../photos/projects/MiddleSISTR/MiddleSISTR3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiddleSISTR3thumb.jpg" alt="Gantry X-Axis" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiddleSISTR/MiddleSISTR2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiddleSISTR2thumb.jpg" alt="Building Gantry" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiddleSISTR/MiddleSISTR3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiddleSISTR3thumb.jpg" alt="Gantry X-Axis" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/MiddleSISTR/MiddleSISTR1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiddleSISTR1thumb.jpg" alt="Sean and I" /></a>
-                    <a target="_blank" href="../photos/projects/MiddleSISTR/MiddleSISTR4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiddleSISTR4thumb.jpg" alt="Gantry PC and Motor Controllers" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiddleSISTR/MiddleSISTR1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiddleSISTR1thumb.jpg" alt="Sean and I" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiddleSISTR/MiddleSISTR4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiddleSISTR4thumb.jpg" alt="Gantry PC and Motor Controllers" /></a>
                 </div>
 
             </div>
@@ -2715,9 +3082,9 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-dual-pics">
-                    <a target="_blank" href="../photos/projects/HUBOCollabDocs/HUBOCollabDocs1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/HUBOCollabDocs1thumb.jpg" alt="Building the HUBO's Leg" /></a>
+                    <a target="_blank" href="../assets/images/projects/HUBOCollabDocs/HUBOCollabDocs1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/HUBOCollabDocs1thumb.jpg" alt="Building the HUBO's Leg" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/HUBOCollabDocs/HUBOCollabDocs4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/HUBOCollabDocs4thumb.jpg" alt="Mid Waist/Hip Assembly" /></a>
+                    <a target="_blank" href="../assets/images/projects/HUBOCollabDocs/HUBOCollabDocs4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/HUBOCollabDocs4thumb.jpg" alt="Mid Waist/Hip Assembly" /></a>
                 </div>
 
             </div>
@@ -2965,10 +3332,10 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 
         <center>
             <div class="well-media">
-                <a target="_blank" href="../photos/projects/STEMHumanoids/STEMHumanoids1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMHumanoids1thumb.jpg" alt="Presenting to Students in Suwon" /></a>
-                <a target="_blank" href="../photos/projects/STEMHumanoids/STEMHumanoids2.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMHumanoids2thumb.jpg" alt="Presenting to Students in Suwon" /></a>
-                <a target="_blank" href="../photos/projects/STEMHumanoids/STEMHumanoids3.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMHumanoids3thumb.jpg" alt="Group Pic with Kids" /></a>
-                <a target="_blank" href="../photos/projects/STEMHumanoids/STEMHumanoids4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMHumanoids4thumb.jpg" alt="Group Pic with Kids" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMHumanoids/STEMHumanoids1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMHumanoids1thumb.jpg" alt="Presenting to Students in Suwon" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMHumanoids/STEMHumanoids2.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMHumanoids2thumb.jpg" alt="Presenting to Students in Suwon" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMHumanoids/STEMHumanoids3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMHumanoids3thumb.jpg" alt="Group Pic with Kids" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMHumanoids/STEMHumanoids4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMHumanoids4thumb.jpg" alt="Group Pic with Kids" /></a>
             </div>
         </center>
 
@@ -3050,11 +3417,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
         <center>
             <div class="well-media">
 
-                <a target="_blank" href="../photos/projects/STEMKaist/STEMKaist1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMKaist1thumb.jpg" alt="Sangshin waiting to present" /></a>
-                <a target="_blank" href="../photos/projects/STEMKaist/STEMKaist3.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMKaist3thumb.jpg" alt="Jungwoo Presenting" /></a>
-                <a target="_blank" href="../photos/projects/STEMKaist/STEMKaist4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMKaist4thumb.jpg" alt="A bunch of students at KAIST for lab tours" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMKaist/STEMKaist1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMKaist1thumb.jpg" alt="Sangshin waiting to present" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMKaist/STEMKaist3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMKaist3thumb.jpg" alt="Jungwoo Presenting" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMKaist/STEMKaist4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMKaist4thumb.jpg" alt="A bunch of students at KAIST for lab tours" /></a>
 
-                <a target="_blank" href="../photos/projects/STEMKaist/STEMKaist2.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/STEMKaist2thumb.jpg" alt="HuboQ" /></a>
+                <a target="_blank" href="../assets/images/projects/STEMKaist/STEMKaist2.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/STEMKaist2thumb.jpg" alt="HuboQ" /></a>
 
             </div>
         </center>
@@ -3104,11 +3471,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </div>
 
                 <div class="well-quad-pics">
-                    <a target="_blank" href="../photos/projects/MiniHuboAAAI/MiniHuboAAAI4.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiniHuboAAAI4thumb.jpg" alt="Mini HUBO with Camera" /></a>
-                    <a target="_blank" href="../photos/projects/MiniHuboAAAI/MiniHuboAAAI3.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiniHuboAAAI3thumb.jpg" alt="Testing at Drexel" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiniHuboAAAI/MiniHuboAAAI4.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiniHuboAAAI4thumb.jpg" alt="Mini HUBO with Camera" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiniHuboAAAI/MiniHuboAAAI3.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiniHuboAAAI3thumb.jpg" alt="Testing at Drexel" /></a>
                     <br>
-                    <a target="_blank" href="../photos/projects/MiniHuboAAAI/MiniHuboAAAI2.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiniHuboAAAI2thumb.jpg" alt="Taking a break at AAAI" /></a>
-                    <a target="_blank" href="../photos/projects/MiniHuboAAAI/MiniHuboAAAI1.jpg"><img loading="lazy" class="img-quad" src="../photos/projects/thumbs_lg/MiniHuboAAAI1thumb.jpg" alt="Obstacle Avoidance" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiniHuboAAAI/MiniHuboAAAI2.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiniHuboAAAI2thumb.jpg" alt="Taking a break at AAAI" /></a>
+                    <a target="_blank" href="../assets/images/projects/MiniHuboAAAI/MiniHuboAAAI1.jpg"><img loading="lazy" class="img-quad" src="../assets/images/projects/thumbs_lg/MiniHuboAAAI1thumb.jpg" alt="Obstacle Avoidance" /></a>
                 </div>
 
             </div>
@@ -3175,7 +3542,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
       -->
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> photos </span></td>
-                    <td><a target="_blank" href="../photos/minihubo_manufacturing/">MiniHUBO Fabrication and Assembly</a></td>
+                    <td><a target="_blank" href="../assets/images/minihubo_manufacturing/">MiniHUBO Fabrication and Assembly</a></td>
                 </tr>
                 <!--
         <tr>
@@ -3196,22 +3563,22 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 <center>
                     <div class="well-media">
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg1.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg1thumb.jpg" alt="Tormach OCNC 1100" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg1thumb.jpg" alt="Tormach OCNC 1100" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg2.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg2thumb.jpg" alt="Machined Hip" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg2.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg2thumb.jpg" alt="Machined Hip" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg3.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg3thumb.jpg" alt="Hip after bending" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg3thumb.jpg" alt="Hip after bending" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg9.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg9thumb.jpg" alt="Complete Mini HUBO Standing" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg9.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg9thumb.jpg" alt="Complete Mini HUBO Standing" /></a>
                         <br>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg5.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg5thumb.jpg" alt="Motor Bracket" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg5.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg5thumb.jpg" alt="Motor Bracket" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg6.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg6thumb.jpg" alt="Idle Horn on Service Plate" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg6.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg6thumb.jpg" alt="Idle Horn on Service Plate" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg8.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg8thumb.jpg" alt="Idle Horn" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg8.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg8thumb.jpg" alt="Idle Horn" /></a>
 
-                        <a target="_blank" href="../photos/projects/MiniHuboMfg/MiniHuboMfg4.jpg"><img loading="lazy" class="well-img" src="../photos/projects/thumbs_lg/MiniHuboMfg4thumb.jpg" alt="Mini HUBO Glamour Shot" /></a>
+                        <a target="_blank" href="../assets/images/projects/MiniHuboMfg/MiniHuboMfg4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/MiniHuboMfg4thumb.jpg" alt="Mini HUBO Glamour Shot" /></a>
 
                     </div>
                 </center>
@@ -3239,8 +3606,20 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 
 <!--    ===========================================================================================================   -->
 
+<!--
 <script>
     $(function(){
         $("#includeProjectsPics").load("projects_pics.html"); 
       });
 </script>
+-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/styles/DirectionAwareHoverEffect/js/jquery.hoverdir.js"></script>  
+    <script type="text/javascript">
+        $(function() {
+        
+            $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+        });
+    </script>
