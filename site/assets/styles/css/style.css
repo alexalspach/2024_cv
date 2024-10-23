@@ -309,12 +309,6 @@ tr #year.hidden {
 	height:460px;	
 	
 	margin-top: 10px;
-	
-}
-
-.media-img-fullwidth {
-	width: 100%;
-	margin-top: 10px;
 }
 
 
@@ -322,29 +316,37 @@ tr #year.hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+}
+
+.marginless-flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.media-flex-img-fullwidth {
+	width: 100%;
+	
 }
 
 .media-flex-img-halfwidth {
 	width:49.5%;
-	margin-top: 10px;
 }
 .media-flex-youtube-halfwidth {
 	width:49.5%;;
 	height:228px;	
-	margin-top: 10px;
 }
 .media-flex-img-thirdwidth {
 	width:33%;
-	margin-top: 10px;
 }
 
 .media-flex-img-quarterwidth {
 	width:24.25%;
-	margin-top: 10px;
 }
 
 .media-flex-img{
-	margin-top: 10px;
 }
 
 
@@ -373,7 +375,7 @@ tr #year.hidden {
 {
 	height: 204px;
   margin-left: 5px;
-  margin-top: -17px;
+  margin-top: -6px;
   margin-right: -44px;
   margin-bottom: -20px;
 }
