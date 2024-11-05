@@ -70,8 +70,11 @@ h4, .h4 {
 }
 
 h1, h2, h3 {
-	margin-bottom: 25px;
+	padding-top: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
+
 
 h1 {
 	/*color: #374746;*/
@@ -100,6 +103,12 @@ h1 a:hover {
 h1 a:active { 
 	color: #222;
 	text-decoration:none; 
+}
+
+
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -172,6 +181,9 @@ tr #year.hidden {
       	
       	margin-left:15px;
       	margin-right:15px;
+
+      	padding-top: 0px;
+      	margin-top: 20px;
       	
       	display: inline-block;
       }
@@ -265,10 +277,13 @@ tr #year.hidden {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
 
   max-height: 99999px;
+
+  margin-top: 25px;
+  margin-bottom: 00px;
 }
 
 .well-media {
-	margin-top:15px;	
+	margin-top: 30px;	
 	width: 100%;
 	text-align: center;
 }
@@ -774,8 +789,8 @@ iframe {
 #time-place-table {
 	
 	/*margin-right: 15px;*/
-	margin-top: 10px;
-	margin-left: 00px;
+	margin-top: 15px;
+	margin-left: 0px;
 }
 
 #top-link-table {
@@ -788,8 +803,10 @@ iframe {
 #toc-table {
 	
 	/*margin-right: 15px;*/
-	margin-bottom: 40px;
-	margin-left: 20px;
+	margin-left: 10px;
+
+  	margin-top: 20px;
+
 }
 
 table{
@@ -874,10 +891,11 @@ a.flip-colors:hover {
 	margin-top: 15px;
 }
 
+
 #link-table {
 	
 	/*margin-right: 15px;*/
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-left: 00px;
 }
 
@@ -920,18 +938,31 @@ a.flip-colors:hover {
 }
 
 .nav {
+
 	/*padding-left: 30px;*/
 	padding-right: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-bottom:3px;
-	
+	margin-bottom:10px;
+
 	border: 0px solid #e3e3e3;
- /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
- box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
- border-top:none;
- border-right:none;
- border-bottom:none;
+	/* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+
+
+	/*TESTING STICKY NAV */
+
+	/*position: sticky;
+	top: 0px;
+	z-index: 99;
+	background: white;
+	padding-bottom: 5px;
+	padding-top: 7px;*/
+
+
 }
 
 .nav-tabs {
@@ -1080,7 +1111,8 @@ Maybe dumb the footer unless descriptions will be added*/
 }
 
 #tags {
-	margin-top:25px;
+	padding-top: 25px;
+	margin-left: -1px;
 }
 
 #map_canvas {
@@ -1110,6 +1142,7 @@ Maybe dumb the footer unless descriptions will be added*/
 	padding-top: 40px;
 	padding-left: 15px;
 	padding-right: 15px;
+
 	
 	/*-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);

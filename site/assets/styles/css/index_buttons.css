@@ -25,7 +25,10 @@
 	border-color: #000;
 	color: #000;
 	
-	transform: scale(1.02);
+	/*transform: scale(1.02);*/
+
+	padding-left: 18px;
+	padding-right: 22px;
 
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;

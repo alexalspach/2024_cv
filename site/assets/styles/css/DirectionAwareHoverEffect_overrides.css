@@ -1,7 +1,14 @@
 .da-thumbs {
-	width: 101%; !important	
-	margin-left: -4px; !important /*BECAUSE OF 4X0.05 MARGIN AROUND SQUARES FOR SPACING */
-	display: inline-block; !important	
+	/*width: 101%; !important	
+	margin-left: -4px; !important */ /*BECAUSE OF 4X0.05 MARGIN AROUND SQUARES FOR SPACING */
+	display: inline-block; !important;	
+
+	width:100%; !important;
+	margin-left: -0.25%; !important;
+	margin-right: -0.25%; !important;
+
+	margin-top: 10px; !important;
+	margin-bottom: 0px; !important;
 
 }
 
@@ -12,6 +19,7 @@
 	
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 	/*text-transform: none; !important	*/
+
 }
 
 .da-thumbs li a div {
