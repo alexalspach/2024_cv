@@ -39,7 +39,7 @@
 
 <div id="tags">
 
-  <div class="sort-button sort-featured btn btn-outline-inverse btn-xs btn-outline-inverse" title="Featured projects" onclick="tagSorting('featured')">FEATURED</div>
+  <div class="sort-button sort-featured btn btn-outline-inverse btn-xs btn-outline-inverse" title="Featured projects" onclick="tagSorting('featured')"><i class="fa fa-star" aria-hidden="true" style="color:#E89C0C"></i> <strong>featured</strong></div>
 
   <div class="sort-button sort-all btn btn-outline-inverse btn-xs btn-xs-active" title="Click here to see all projects and presentations" onclick="tagSorting('all')">all</div>
   
@@ -82,7 +82,14 @@
   <!-- TRI -->
 
 
-    <li class="sortable-div all tri soft tactile manipulation hri humanoids designmfg hwdev videos"> 
+    <li class="sortable-div featured all tri manipulation humanoids"> 
+        <a onclick="highlight('#bdtri')" href="#bdtri"> 
+            <img src="../assets/images/projects/thumbs/BDTRI1thumb.jpg" />
+            <div><span><strong>BD + TRI Partnership</strong><br>Team Manager</span></div>
+        </a>  
+    </li>  
+
+    <li class="sortable-div featured all tri soft tactile manipulation hri humanoids designmfg hwdev videos"> 
         <a onclick="highlight('#Punyo2')" href="#Punyo2"> 
             <img src="../assets/images/projects/thumbs/MeetPunyothumb_2.jpg" />
             <div><span><strong>Punyo</strong><br>H/W Dev / Team Lead</span></div>
@@ -112,7 +119,7 @@
         </a>  
     </li>                        
 
-    <li class="sortable-div all tri soft tactile manipulation hri designmfg hwdev videos"> 
+    <li class="sortable-div featured all tri soft tactile manipulation hri designmfg hwdev videos"> 
         <a onclick="highlight('#SoftBubbleGrip1')" href="#SoftBubbleGrip1"> 
             <img src="../assets/images/projects/thumbs/BubbleGripper1thumb.jpg" />
             <div><span><strong>Soft-Bubble Grippers</strong><br>H/W Dev, Team Lead</span></div>
@@ -153,7 +160,7 @@
         </a>  
     </li>  
 
-    <li class="sortable-div all disney designmfg hwdev videos"> 
+    <li class="sortable-div featured all disney designmfg hwdev videos"> 
         <a onclick="highlight('#SnapBot1')" href="#SnapBot1"> 
             <img src="../assets/images/projects/thumbs/Snapbot1thumb.jpg" />
             <div><span><strong>Snapbot: A Reconfigurable Legged Robot</strong><br>H/W Dev</span></div>
@@ -182,10 +189,10 @@
     </li> 
 
 
-    <li class="sortable-div all hri disney humanoids soft tactile manipulation hwdev designmfg videos">            
+    <li class="sortable-div featured all hri disney humanoids soft tactile manipulation hwdev designmfg videos">            
         <a onclick="highlight('#SoftUpper')" href="#SoftUpper"> <!-- Highlighting doesnt work. Because its called from a different file? -->
             <img src="../assets/images/projects/thumbs/SoftUpper2thumb.jpg" />
-            <div><span><strong>Soft Upper Body</strong><br>Design and Dev</span></div>
+            <div><span><strong>Soft Upper Body @ Disney</strong><br>Design and Dev</span></div>
         </a>  
     </li>                     
 
@@ -394,7 +401,7 @@
                 <ul>
 
                     <div class="sortable-div all tri manipulation humanoids">
-                        <a onclick="highlight('#bd_tri')" href="#bd_tri" title="bd_tri">
+                        <a onclick="highlight('#bdtri')" href="#bdtri" title="bdtri">
                             <li>Boston Dynamics and Toyota Research Team Up on Robots</li>
                         </a>
                     </div>
@@ -828,7 +835,7 @@
 
 <div class="sortable-div featured all tri manipulation humanoids">
 
-    <div class="well" name="bd_tri" id="bd_tri">
+    <div class="well" name="bdtri" id="bdtri">
 
         <div class="project-title">Boston Dynamics and Toyota Research Team Up on Robots</div>
 
@@ -931,17 +938,6 @@
                     <td><a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8">Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research (by Alex and the Punyo Team)</a></td>
                 </tr>
 
-                <!--
-                <tr>
-                    <td class="table-title">
-                        <br>
-                    </td>
-                    <td>
-                        <br>
-                    </td>
-                </tr>
-                -->
-
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> press </span></td>
                     <td><a target="_blank" href="https://spectrum.ieee.org/humanoid-robot-tri-punyo">Toyota’s “Bubble-ized” Humanoid Grasps With Its Whole Body (IEEE)</a></td>
@@ -968,15 +964,17 @@
         <div class="well-media">
 
             <div class="media-flex-container">
-              <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8">
-                <img loading="lazy" class="media-flex-img-fullwidth media-shadow hvr-grow-float" src="../assets/images/projects/Punyo/Punyo2ReadMorethumb2.jpg" alt="Early Punyo Concept Art">
-              </a>
+                <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8">
+                    <img loading="lazy" class="media-flex-img-fullwidth media-shadow hvr-grow-float" src="../assets/images/projects/Punyo/Punyo2ReadMorethumb2.jpg" alt="Early Punyo Concept Art">
+                </a>
             </div>
 
-            <div class="media-youtube-fullwidth media-shadow">
-                <iframe loading="lazy" loading="lazy" src="https://www.youtube.com/embed/FY-MD4gteeE?si=lzPHWZaO7SDVNzx2?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
-                </iframe>
-            </div>            
+            <div class="media-flex-container">
+                <div class="media-youtube-fullwidth media-shadow">
+                    <iframe loading="lazy" loading="lazy" src="https://www.youtube.com/embed/FY-MD4gteeE?si=lzPHWZaO7SDVNzx2?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
+                    </iframe>
+                </div> 
+            </div>           
 
             <div class="media-flex-container">
                 <img loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/Punyo2ConceptArt1thumb.jpg" alt="Early Punyo Concept Art">
@@ -1003,7 +1001,6 @@
                 <img loading="lazy" class="media-shadow hvr-grow-rotate" style="width:32%" src="../assets/images/projects/Punyo/Punyo2Mission2embroidered_rotated.png" alt="Early Punyo Concept Art">
             </div>
 
-
             <div class="media-flex-container" style="margin-top: 20px;">
                 <a style="display: contents" target="_blank" href="../assets/images/projects/Punyo/PunyoTeamPhotoMarchDemo.jpg">
                     <img style="border-radius: 10px; transform: rotate(-4deg) scale(1.0); z-index: 90; outline: 4px solid white;" loading="lazy" class="media-flex-img-halfwidth media-shadow hvr-shadow" src="../assets/images/projects/Punyo/PunyoTeamPhotoMarchDemohalfthumb.jpg" alt="Punyo Team Photo">
@@ -1022,10 +1019,12 @@
                 <img loading="lazy" class="media-shadow hvr-grow" style="width:60%;" src="../assets/images/projects/Punyo/Punyo2tradbubbles.png" alt="Early Punyo Concept Art">
               </center>
             </div>
-        
+            
+            <!--
             <center>
               <img loading="lazy" class="media-shadow hvr-grow" style="width:250px; margin-top:20px" src="../assets/images/projects/Punyo/Punyo_wordart.png" alt="Punyo logo">
             </center>
+            -->
                   
 
 
@@ -1047,12 +1046,12 @@
 <div class="sortable-div all soft tactile manipulation hri tri disney humanoids international designmfg hwdev swdev">
     <div class="well" name="CWBB1" id="CWBB1">
 
-        <div class="project-title"><i>Can We Build Baymax?</i> Annual Humanoids Conference Workshop Organizer</div>
+        <div class="project-title"><i>Can We Build Baymax?</i> Annual Humanoids Conference Workshop</div>
 
         <div class="project-description">
           <p><strong>Co-organize annual international workshop</strong> at the IEEE-RAS International Conference on Humanoid Robots bringing together experts in diverse fields to discuss what we have so far and what more it will take to build our favorite soft robot Baymax! I also design and maintain the workshop website each and every year. <a target="_blank" href="http://baymax.org/"><strong>[<u>baymax.org</u>]</strong></a>
           </p>
-          <p><strong>Organized with Chris Atkeson, Katsu Yamane, Joohyung Kim, and Jinoh Lee.</strong></p>
+          <p><strong>Co-Organized with Chris Atkeson, Katsu Yamane, Joohyung Kim, and Jinoh Lee.</strong></p>
           
 
 
@@ -1161,7 +1160,7 @@
 <div class="sortable-div all tri soft tactile manipulation hri designmfg hwdev humanoids videos">
     <div class="well" name="Punyo1" id="Punyo1">
 
-        <div class="project-title">Punyo-1: Whole-body manipulation and physical human-robot interaction</div>
+        <div class="project-title">Punyo-1: Whole-Body Manipulation and Physical Human-Robot Interaction</div>
         
         <div class="project-description">
           <p><strong>Sucessfully pitched and led new TRI project</strong> developing hardware and algorithms for rich-contact whole-body manipulation, physical assistance, and human-robot interaction.</p>
@@ -1269,7 +1268,7 @@
                                                                              |_|   |_|                                                       
                                                                            -->
 
-<div class="sortable-div all tri soft tactile manipulation hri designmfg hwdev videos">
+<div class="sortable-div featured all tri soft tactile manipulation hri designmfg hwdev videos">
     <div class="well" name="SoftBubbleGrip1" id="SoftBubbleGrip1">
 
         <!--<strong>A. Alspach</strong>, N. Kuppuswamy, A. Uttamchandani, S. Creasey, T. Ikeda, S. Joonhigh, H.J. Suh, T. Pang, P. Mitiguy, R. Tedrake,-->
@@ -1364,40 +1363,72 @@
             </table>
         </div>
 
-        <center>
-            <div class="well-media">
 
-                <div class="well-youtube2l-wide">
-                    <iframe loading="lazy" loading="lazy" src="https://www.youtube.com/embed/zm-sdgb7KAA?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
 
-                <div class="well-youtube2r-wide">
-                    <iframe loading="lazy" loading="lazy" src="https://www.youtube.com/embed/1ywIaWuwTbI?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
 
-                <div class="well-youtube2r-wide">
-                    <iframe loading="lazy" loading="lazy" src="https://www.youtube.com/embed/2-YuIfspDrk?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
+        <div class="well-media">
 
-                <div class="well-youtube2r-wide">
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/qr1vS4ZsoFM?rel=0" frameborder="0" allowfullscreen style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
+            <div class="media-flex-container">
+              <div class="media-flex-youtube-halfwidth media-shadow">
+                <iframe loading="lazy" loading="lazy" 
+                src="https://www.youtube.com/embed/zm-sdgb7KAA?rel=0" 
+                frameborder="0" 
+                allowfullscreen 
+                style="width: 100%; height: 100%;">
+                </iframe>
+              </div>
 
-                <div class="media-flex-container">
-                  <a style="display: contents;" target="_blank" href="https://punyo.tech"><img loading="lazy" class="media-flex-img-fullwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripperBuild1thumb.jpg" alt="1" /></a>
-                </div>
-
-                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper1.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper1thumb.jpg" alt="1" /></a>
-                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper5.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper5thumb.jpg" alt="2" /></a>
-                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper3.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper3thumb.jpg" alt="3" /></a>
-                <a target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper4.jpg"><img loading="lazy" class="well-img" src="../assets/images/projects/thumbs_lg/BubbleGripper4thumb.jpg" alt="4" /></a>
-
+              <div class="media-flex-youtube-halfwidth media-shadow">
+                <iframe loading="lazy" loading="lazy" 
+                src="https://www.youtube.com/embed/1ywIaWuwTbI?rel=0" 
+                frameborder="0" 
+                allowfullscreen 
+                style="width: 100%; height: 100%;">
+                </iframe>
+              </div>
             </div>
-        </center>
+
+            <div class="media-flex-container">
+              <div class="media-flex-youtube-halfwidth media-shadow">
+                <iframe loading="lazy" loading="lazy" 
+                src="https://www.youtube.com/embed/2-YuIfspDrk?rel=0" 
+                frameborder="0" 
+                allowfullscreen 
+                style="width: 100%; height: 100%;">
+                </iframe>
+              </div>
+
+              <div class="media-flex-youtube-halfwidth media-shadow">
+                <iframe loading="lazy" loading="lazy" 
+                src="https://www.youtube.com/embed/qr1vS4ZsoFM?rel=0" 
+                frameborder="0" 
+                allowfullscreen 
+                style="width: 100%; height: 100%;">
+                </iframe>
+              </div>
+            </div>
+
+
+
+            <div class="media-flex-container">
+              <a style="display: contents;" target="_blank" href="https://punyo.tech"><img loading="lazy" class="media-flex-img-fullwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripperBuild1thumb.jpg" alt="1" /></a>
+            </div>
+
+
+            <div class="media-flex-container">
+                <a style="display: contents" target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper1.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripper1thumb.jpg" alt="Punyo 1 1"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper2.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripper5thumb.jpg" alt="Punyo 1 2"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper3.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripper3thumb.jpg" alt="Punyo 1 3"></a>
+                <a style="display: contents" target="_blank" href="../assets/images/projects/BubbleGripper/BubbleGripper4.jpg">
+                    <img loading="lazy" class="media-flex-img-quarterwidth media-shadow" src="../assets/images/projects/thumbs_lg/BubbleGripper4thumb.jpg" alt="Punyo 1 4"></a>
+            </div>
+
+
+        </div>
+
 
     </div>
 </div>
@@ -1430,7 +1461,7 @@
 
         <!--TRI Dexterous Manipulation (formerly "Enabling") Team<br>-->
 
-        <div class="project-title">Compliant Fingers and Test Kitchen for Robotic Manipulation Capabilities Development</div>
+        <div class="project-title">Compliant Fingers for Robotic Manipulation Capabilities Development</div>
         
         <div class="project-description">
           <p><strong>Developed 3D printed compliant fingers</strong> based on fin rays with rigid fingertips for fine manipulation, as well as other end effector hardware including depth camera mounts and capacitive fingers. Also helped design and build test kitchen for development and demonstration of our manipulation capabiltiies.</p>
@@ -1511,13 +1542,12 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2019-Alspach_Hashimoto_Kuppuswamy_Tedrake-Soft-bubble.pdf">Highly Compliant, Dense Geometry-Based Visuotactile Sensing</a> (RoboSoft 2019) <a href="https://arxiv.org/abs/1904.02252 target=" _blank
-                        "">[arxiv]</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2019-Alspach_Hashimoto_Kuppuswamy_Tedrake-Soft-bubble.pdf">Highly Compliant, Dense Geometry-Based Visuotactile Sensing</a> (RoboSoft 2019) <a href="https://arxiv.org/abs/1904.02252" target="_blank">[arxiv]</a></td>
                 </tr>
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2019-Kuppuswamy_Castro_Phillips-Grafflin_Alspach_Tedrake-Contact_Patch_notfinal.pdf">Fast Model-Based Contact Patch and Pose Estimation for Highly Deformable Dense-Geometry Tactile Sensors</a>                        (RA-L 2020) <a href="https://ieeexplore.ieee.org/document/8936859 target=" _blank "">[IEEE Xplore]</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2019-Kuppuswamy_Castro_Phillips-Grafflin_Alspach_Tedrake-Contact_Patch_notfinal.pdf">Fast Model-Based Contact Patch and Pose Estimation for Highly Deformable Dense-Geometry Tactile Sensors</a> (RA-L 2020) <a href="https://ieeexplore.ieee.org/document/8936859" target="_blank">[IEEE Xplore]</a></td>
                 </tr>
 
                 <!--<tr><td><br></td></tr> 
@@ -1588,11 +1618,10 @@
 
 <div class="sortable-div all disney soft tactile manipulation hri humanoids designmfg hwdev videos">
     <div class="well" name="SoftArm1" id="SoftArm1">
-
-        <strong>A. Alspach</strong>, J. Kim, K. Yamane,
         
 
         <div class="project-title">Design and Fabrication of a Soft Robotic Hand and Arm System</div>
+        Alspach, A., Kim, J., Yamane, K.<br>
         Hardware/electronics development, RoboSoft 2018, Livorno, Italy, Apr. 2018, Disney Research
         
         <div class="project-description">
@@ -1605,7 +1634,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2018-Alspach_Kim_Yamane-Design_and_Fabrication_of_a_Soft_Robotic_Hand_and_Arm_System.pdf">Design and fabrication of a soft robotic hand and arm system (RoboSoft 2018)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2018-Alspach_Kim_Yamane-Design_and_Fabrication_of_a_Soft_Robotic_Hand_and_Arm_System.pdf">Design and fabrication of a soft robotic hand and arm system (RoboSoft 2018)</a></td>
                 </tr>
 
                 <tr>
@@ -1651,7 +1680,7 @@
                     |_|                    
                   -->
 
-<div class="sortable-div all disney designmfg hwdev videos">
+<div class="sortable-div featured all disney designmfg hwdev videos">
     <div class="well" name="SnapBot1" id="SnapBot1">
 
         
@@ -1671,7 +1700,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2017-Kim_Alspach_Yamane-Snapbot_a_Reconfigurable_Legged_Robot.pdf">Snapbot: A Reconfigurable Legged Robot (IROS 2017)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2017-Kim_Alspach_Yamane-Snapbot_a_Reconfigurable_Legged_Robot.pdf">Snapbot: A Reconfigurable Legged Robot (IROS 2017)</a></td>
                 </tr>
 
                 <tr>
@@ -1740,7 +1769,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2018-Ha_Coros_Alspach_Bern_Kim_Yamane-Computational_Design_of_Robotic_Devices_from_High_Level_Motion_Specifications.pdf">Computational Design of Robotic Devices from High-Level Motion Specifications (T-RO 2018)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2018-Ha_Coros_Alspach_Bern_Kim_Yamane-Computational_Design_of_Robotic_Devices_from_High_Level_Motion_Specifications.pdf">Computational Design of Robotic Devices from High-Level Motion Specifications (T-RO 2018)</a></td>
                 </tr>
 
                 <tr>
@@ -1765,7 +1794,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2018-Ha_Coros_Alspach_Kim_Yamane-Computational_Co-Optimization_of_Design_Parameters_and_Motion_Trajectories_for_Robotic_Systems.pdf">Computational Co-Optimization of Design Parameters and Motion Trajectories for Robotic Systems (IJRR 2018)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2018-Ha_Coros_Alspach_Kim_Yamane-Computational_Co-Optimization_of_Design_Parameters_and_Motion_Trajectories_for_Robotic_Systems.pdf">Computational Co-Optimization of Design Parameters and Motion Trajectories for Robotic Systems (IJRR 2018)</a></td>
                 </tr>
 
                 <tr>
@@ -1790,7 +1819,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2017-Ha_Coros_Alspach_Kim_Yamane-Joint_Optimization_of_Robot_Design_and_Motion_Parameters_using_the_Implicit_Function_Theorem.pdf">Joint Optimization of Robot Design and Motion Parameters using the Implicit Function Theorem (RSS 2017)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2017-Ha_Coros_Alspach_Kim_Yamane-Joint_Optimization_of_Robot_Design_and_Motion_Parameters_using_the_Implicit_Function_Theorem.pdf">Joint Optimization of Robot Design and Motion Parameters using the Implicit Function Theorem (RSS 2017)</a></td>
                 </tr>
 
                 <tr>
@@ -1820,7 +1849,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2016-Ha_Coros_Alspach_Kim_Yamane-Task_based_Limb_Optimization_for_Legged_Robots.pdf">Task-based Limb Optimization for Legged Robots (IROS 2016)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2016-Ha_Coros_Alspach_Kim_Yamane-Task_based_Limb_Optimization_for_Legged_Robots.pdf">Task-based Limb Optimization for Legged Robots (IROS 2016)</a></td>
                 </tr>
 
                 <tr>
@@ -1908,7 +1937,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2016-Kim_Alspach_Leite_Yamane-Study_of_Childrens_Hugging_for_Interactive_Robot_Design.pdf">Study of Children's Hugging for Interactive Robot Design (RO-MAN 2016)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2016-Kim_Alspach_Leite_Yamane-Study_of_Childrens_Hugging_for_Interactive_Robot_Design.pdf">Study of Children's Hugging for Interactive Robot Design (RO-MAN 2016)</a></td>
                 </tr>
 
                 <tr>
@@ -1919,7 +1948,7 @@
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> related </span></td>
-                    <td><a target="_blank" href="files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
                 </tr>
 
             </table>
@@ -2013,7 +2042,7 @@
                                | |   | |                                   __/ |
                                |_|   |_|                                  |___/    -->
 
-<div class="sortable-div all disney humanoids soft tactile manipulation hri hwdev designmfg videos korea">
+<div class="sortable-div featured all disney humanoids soft tactile manipulation hri hwdev designmfg videos korea">
     <div class="well" name="SoftUpper" id="SoftUpper">
         
         
@@ -2036,7 +2065,7 @@
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pic </span></td>
@@ -2063,12 +2092,12 @@
 
                 <tr>
                     <td><span class="label label-info pull-right"> related </span></td>
-                    <td><a target="_blank" href="files/papers/2015-Kim_Alspach_Yamane-3D_Printed_Soft_Skin_for_Safe_Human-Robot_Interaction.pdf">3D Printed Soft Skin for Safe Human-Robot Interaction (IROS 2015)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2015-Kim_Alspach_Yamane-3D_Printed_Soft_Skin_for_Safe_Human-Robot_Interaction.pdf">3D Printed Soft Skin for Safe Human-Robot Interaction (IROS 2015)</a></td>
                 </tr>
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> related </span></td>
-                    <td><a target="_blank" href="files/papers/2016-Kim_Alspach_Leite_Yamane-Study_of_Childrens_Hugging_for_Interactive_Robot_Design.pdf">Study of Children's Hugging for Interactive Robot Design (RO-MAN 2016)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2016-Kim_Alspach_Leite_Yamane-Study_of_Childrens_Hugging_for_Interactive_Robot_Design.pdf">Study of Children's Hugging for Interactive Robot Design (RO-MAN 2016)</a></td>
                 </tr>
 
 
@@ -2150,7 +2179,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2015-Kim_Alspach_Yamane-3D_Printed_Soft_Skin_for_Safe_Human-Robot_Interaction.pdf">3D Printed Soft Skin for Safe Human-Robot Interaction (IROS 2015)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2015-Kim_Alspach_Yamane-3D_Printed_Soft_Skin_for_Safe_Human-Robot_Interaction.pdf">3D Printed Soft Skin for Safe Human-Robot Interaction (IROS 2015)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -2165,7 +2194,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> related </span></td>
-                    <td><a target="_blank" href="files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2015-Alspach_Kim_Yamane-Humanoids-Design_of_a_Soft_Upper_Body_Robot_for_Physical_Human_Robot_Interaction.pdf">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids 2015)</a></td>
                 </tr>
 
             </table>
@@ -2263,7 +2292,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 -->
 
 
-<div class="sortable-div all simlab pathplanning international swdev videos korea">
+<div class="sortable-div featured all simlab pathplanning international swdev videos korea">
     <div class="well" name="ActiveStudio" id="ActiveStudio">
         <div class="project-title">Maverick User Interface Design and Animation Software Development</div>
         SimLab (now Wonik Robotics), South Korea. Work done for Sanghwa.
@@ -2345,7 +2374,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> brochure </span></td>
-                    <td><a target="_blank" href="files/brochures/AllegroHand_Brochure_SimLab.pdf">Allegro Hand Product Brochure</a></td>
+                    <td><a target="_blank" href="../assets/files/brochures/AllegroHand_Brochure_SimLab.pdf">Allegro Hand Product Brochure</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -2476,7 +2505,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> brochure </span></td>
-                    <td><a target="_blank" href="files/brochures/AllegroDog_Brochure_SimLab.pdf">Allegro Dog Product Brochure</a></td>
+                    <td><a target="_blank" href="../assets/files/brochures/AllegroDog_Brochure_SimLab.pdf">Allegro Dog Product Brochure</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -2546,11 +2575,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Jun_Alspach-Controlling_and_Maximizing_the_Humanoid_Robot_Pushing_Force_Through_Posture.pdf">Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI 2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Jun_Alspach-Controlling_and_Maximizing_the_Humanoid_Robot_Pushing_Force_Through_Posture.pdf">Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI 2012)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2012-Jun_Alspach-URAI-Controlling_and_Maximizing_the_Humanoid_Robot_Pushing_Force_by_Postures.pdf">Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI 2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2012-Jun_Alspach-URAI-Controlling_and_Maximizing_the_Humanoid_Robot_Pushing_Force_by_Postures.pdf">Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI 2012)</a></td>
                 </tr>
             </table>
         </div>
@@ -2589,11 +2618,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right">paper</span></td>
-                    <td><a target="_blank" href="files/papers/2012-Alspach-A_Humanoid_Robot_Pushing_Model_Inspired_by_Human_Motion.pdf">A Humanoid Robot Pushing Model Inspired by Human Motion (2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2012-Alspach-A_Humanoid_Robot_Pushing_Model_Inspired_by_Human_Motion.pdf">A Humanoid Robot Pushing Model Inspired by Human Motion (2012)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach-A_Humanoid_Robot_Pushing_Model_Inspired_by Human_Motion-Masters_Thesis.pdf">A Humanoid Robot Pushing Model Inspired by Human Motion (2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach-A_Humanoid_Robot_Pushing_Model_Inspired_by Human_Motion-Masters_Thesis.pdf">A Humanoid Robot Pushing Model Inspired by Human Motion (2012)</a></td>
                 </tr>
             </table>
         </div>
@@ -2644,7 +2673,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_Mason_Sun-Darwin_Drives-ICRA2012.pdf">Darwin-OP Drives (ICRA 2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_Mason_Sun-Darwin_Drives-ICRA2012.pdf">Darwin-OP Drives (ICRA 2012)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -2864,7 +2893,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/papers/2012-Alspach_Mason-Robotics2_Final_Project_Report.pdf">Computer Vision and Mobile Robot Navigation</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2012-Alspach_Mason-Robotics2_Final_Project_Report.pdf">Computer Vision and Mobile Robot Navigation</a></td>
                 </tr>
             </table>
         </div>
@@ -2913,11 +2942,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
 
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_Mason-Learning_SyRoTek-A_Collaboration_Between_Czech_Tech_and_Drexel_1.pdf">Learning SyRoTek: Progress Report (CVUT 2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_Mason-Learning_SyRoTek-A_Collaboration_Between_Czech_Tech_and_Drexel_1.pdf">Learning SyRoTek: Progress Report (CVUT 2012)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_Mason-Learning_SyRoTek-A_Collaboration_Between_Czech_Tech_and_Drexel_2.pdf">What We've Learned: Final Report (CVUT 2012)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_Mason-Learning_SyRoTek-A_Collaboration_Between_Czech_Tech_and_Drexel_2.pdf">What We've Learned: Final Report (CVUT 2012)</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> video </span></td>
@@ -3015,7 +3044,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2011-Alspach_Mason-Step_SISTR_Design_Requirements.pdf">Step SISTR: Miniature Humanoid Gantry Ideas and Design Requirements (2011)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2011-Alspach_Mason-Step_SISTR_Design_Requirements.pdf">Step SISTR: Miniature Humanoid Gantry Ideas and Design Requirements (2011)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -3072,7 +3101,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2011-Alspach_Gross-NSF_Advisory_Committee_Meeting.pdf">Humanoid Robot (HUBO) Collaborative Documentation (2011)</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2011-Alspach_Gross-NSF_Advisory_Committee_Meeting.pdf">Humanoid Robot (HUBO) Collaborative Documentation (2011)</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -3115,7 +3144,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
       <table>
         <tr>
           <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-          <td><a target="_blank" href="files/presentations/2011-Alspach_Gross-NSF_Advisory_Committee_Meeting.pdf">Humanoid Robot (HUBO) Collaborative Documentation (2011)</a></td>
+          <td><a target="_blank" href="../assets/files/presentations/2011-Alspach_Gross-NSF_Advisory_Committee_Meeting.pdf">Humanoid Robot (HUBO) Collaborative Documentation (2011)</a></td>
         </tr>
       </table>
     </div>
@@ -3147,7 +3176,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2011-Mason_Alspach_Nguyen_Humanoid_Manipulation_Challenge.pdf">MiniHUBO Path Planning and Manipulation</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2011-Mason_Alspach_Nguyen_Humanoid_Manipulation_Challenge.pdf">MiniHUBO Path Planning and Manipulation</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -3197,15 +3226,15 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_1.pdf">Presentation 1: Customer Requirements and Concept Development</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_1.pdf">Presentation 1: Customer Requirements and Concept Development</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_2.pdf">Presentation 2: Target Specifications and Concept Design</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_2.pdf">Presentation 2: Target Specifications and Concept Design</a></td>
                 </tr>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> pres </span></td>
-                    <td><a target="_blank" href="files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_3.pdf">Presentation 3: Alpha-Prototype Fabrication and Analysis</a></td>
+                    <td><a target="_blank" href="../assets/files/presentations/2012-Alspach_et_al-Product_Development_MEM_435_3.pdf">Presentation 3: Alpha-Prototype Fabrication and Analysis</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -3514,7 +3543,7 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
             <table>
                 <tr>
                     <td class="table-title"><span class="label label-info pull-right"> paper </span></td>
-                    <td><a target="_blank" href="files/papers/2010-Alspach_Mason-Robotics_Final_Project_Report.pdf">Final Project: Mobile Robot Mapping, Navigation and Obstacle Avoidance</a></td>
+                    <td><a target="_blank" href="../assets/files/papers/2010-Alspach_Mason-Robotics_Final_Project_Report.pdf">Final Project: Mobile Robot Mapping, Navigation and Obstacle Avoidance</a></td>
                 </tr>
                 <tr>
                     <td><span class="label label-info pull-right"> video </span></td>
@@ -3632,11 +3661,11 @@ http://patorjk.com/software/taag/#p=display&f=Big&t=Hubo%20Wiki FONT: Big
 -->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/styles/DirectionAwareHoverEffect/js/jquery.hoverdir.js"></script>  
-    <script type="text/javascript">
-        $(function() {
-        
-            $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+<script type="text/javascript" src="../assets/styles/DirectionAwareHoverEffect/js/jquery.hoverdir.js"></script>  
+<script type="text/javascript">
+    $(function() {
+    
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
-        });
-    </script>
+    });
+</script>

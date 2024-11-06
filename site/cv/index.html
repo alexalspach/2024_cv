@@ -56,7 +56,6 @@
         <div id = "header">
           <div id = "header-text">
             <h1 style="margin-top: 0px; padding-top: 0px;"><a href="index.html">Alex Alspach</a><small> robotic sensing and interaction</small></h1>
-            <br />
           </div>
         </div>
 
@@ -71,8 +70,6 @@
               <li><a id="tab4" href="#publications" data-toggle="tab">Publications</a></li>
               <li><a id="tab1" href="#me" data-toggle="tab">Me</a></li>
               <li><a id="tab5" style="background:white; color:#374746" href="../resume/Alspach_Resume.pdf">Resume</a></li>
-  
-
             </ul>
 
 
@@ -103,20 +100,16 @@
 
               <!-- Education -->
               <div class="tab-pane" id="education"> 
-                <br />
                 <div id="includeEducation"></div>
               </div>              
 
               <!-- Publications -->
               <div class="tab-pane" id="publications"> 
-                <br />
                 <div id="includePapers"></div>
-                <p>PUBS 1</p>
               </div>
 
               <!-- Me -->
               <div class="tab-pane" id="me"> 
-                <br />
                 <div id="includeMe"></div>
                 <div id="includeContact"></div>
               </div>
@@ -129,7 +122,7 @@
       <div id="footer-links">
         Designed by Alex Alspach, 2014
         <br>
-        Last Updated Oct 2024
+        Last updated Nov 2024
         <br>
 
         <a href="../index.html">alexalspach.com</a></p>
@@ -147,164 +140,15 @@
     <script src="../assets/styles/bootstrap310/js/bootstrap.js"></script> 
 
     <!-- Include external html within pages -->    
-    <script src="../assets/styles/js/include_html.js"></script>  
+    <!-- <script src="../assets/styles/js/include_html.js"></script>  -->
+
 
     <!-- Tag-based sorting for Projects, etc -->    
     <script src="../assets/styles/js/tag_sorting2.js"></script>
 
 
-<!--
-<script type="text/javascript">
-  $(document).ready(function () {
-    var isReload = false;
 
-    // Check if the Navigation Timing API is supported
-    if (performance.getEntriesByType && performance.getEntriesByType('navigation').length > 0) {
-      var navType = performance.getEntriesByType('navigation')[0].type;
-      isReload = navType === 'reload';
-    } else if (performance.navigation) {
-      // Fallback for older browsers
-      isReload = performance.navigation.type === performance.navigation.TYPE_RELOAD;
-    }
 
-    var tabId;
-    var anchorId;
-
-    if (isReload) {
-      // Page was reloaded; ignore the hash and set default tab
-      tabId = 'projects'; // Default tab
-      anchorId = null;
-      // Optionally, clear the hash from the URL without causing a scroll
-      window.history.replaceState(null, null, window.location.pathname);
-    } else {
-      // Page was not reloaded; parse the hash
-      var hash = window.location.hash.substring(1);
-      var parts = hash.split('/');
-      tabId = parts[0] || 'projects'; // Default tab
-      anchorId = parts[1];
-    }
-
-    // Activate the tab
-    $('.nav-tabs a[href="#' + tabId + '"]').tab('show');
-
-    // Load content and scroll after the tab is shown
-    $('.nav-tabs a').on('shown.bs.tab', function (e) {
-      var currentTabId = $(e.target).attr('href').substring(1);
-      anchorId = null;
-
-      // Update the URL hash without causing scrolling
-      window.history.replaceState(null, null, '#' + currentTabId);
-
-      // Load content for the new tab
-      loadContentAndScroll(currentTabId);
-    });
-
-    // Load content and scroll to anchor if provided
-    function loadContentAndScroll(tabId) {
-      var contentDivId;
-      var contentUrl;
-
-      switch (tabId) {
-        case 'projects':
-          contentDivId = '#includeProjects';
-          contentUrl = 'projects.html';
-          break;
-        case 'work':
-          contentDivId = '#includeExperience';
-          contentUrl = 'experience.html';
-          break;
-        case 'education':
-          contentDivId = '#includeEducation';
-          contentUrl = 'education.html';
-          break;
-        case 'publications':
-          contentDivId = '#includePapers';
-          contentUrl = 'paperspatents.html';
-          break;
-        case 'me':
-          contentDivId = '#includeMe';
-          contentUrl = 'me.html';
-          break;
-        // Add other cases as needed
-        default:
-          return;
-      }
-
-      // Load content
-      $(contentDivId).load(contentUrl, function () {
-        if (anchorId) {
-          var target = $('#' + anchorId);
-          if (target.length) {
-            $('html, body').animate(
-              {
-                scrollTop: target.offset().top - 20,
-              },
-              // Increase the duration to 1500 milliseconds
-              1500,
-              // Use the 'swing' easing function
-              'swing',
-              function () {
-                // Add a tiny delay before applying scaling effect
-                setTimeout(function () {
-                  target.addClass('scale-animation');
-                  // Remove the class after the animation is done
-                  setTimeout(function () {
-                    target.removeClass('scale-animation');
-                  }, 1100); // 1s duration + 100ms buffer
-                }, 100); // Tiny delay between scroll and animation
-              }
-            );
-          }
-        } else {
-          // Scroll to top if no anchorId
-          $('html, body').scrollTop(0);
-        }
-
-        // Attach click handler for internal links to update URL hash
-        $(contentDivId).on('click', 'a', function (e) {
-          var href = $(this).attr('href');
-          if (href && href.startsWith('#')) {
-            e.preventDefault(); // Prevent default behavior
-            var newAnchorId = href.substring(1);
-            var target = $('#' + newAnchorId);
-            if (target.length) {
-              $('html, body').animate(
-                {
-                  scrollTop: target.offset().top - 20,
-                },
-                // Increase the duration to 1500 milliseconds
-                1500,
-                // Use the 'swing' easing function
-                'swing',
-                function () {
-                  // Add a tiny delay before applying scaling effect
-                  setTimeout(function () {
-                    target.addClass('scale-animation');
-                    // Remove the class after the animation is done
-                    setTimeout(function () {
-                      target.removeClass('scale-animation');
-                    }, 1100); // Adjust timing to match animation duration
-                  }, 100); // Tiny delay between scroll and animation
-                }
-              );
-              // Update the URL hash without causing scrolling
-              window.history.replaceState(null, null, '#' + tabId + '/' + newAnchorId);
-              // Update anchorId variable
-              anchorId = newAnchorId;
-            }
-          }
-        });
-      });
-    }
-
-    // Initial content load
-    loadContentAndScroll(tabId);
-  });
-</script>
-
--->
-
-<!--
 
 <script type="text/javascript">
   $(document).ready(function () {
@@ -378,58 +222,81 @@
           return;
       }
 
+      // Clear previous content if necessary
+      $(contentDivId).empty();
+
       // Load content
       $(contentDivId).load(contentUrl, function () {
-        // After content is loaded and rendered
-        setTimeout(function () {
-          if (anchorId) {
-            scrollToAnchor(anchorId);
-          } else {
-            // Scroll to top if no anchorId
-            window.scrollTo(0, 0);
-          }
+        // After content is loaded
+        if (anchorId) {
+          scrollToAnchor(anchorId);
+        } else {
+          // Scroll to top if no anchorId
+          $('html, body').animate({ scrollTop: 0 }, 'fast');
+        }
 
-          // Attach click handler for internal links
-          $(contentDivId).on('click', 'a', function (e) {
-            var href = $(this).attr('href');
-            if (href && href.startsWith('#')) {
-              e.preventDefault(); // Prevent default behavior
-              var newAnchorId = href.substring(1);
-              if (document.getElementById(newAnchorId)) {
-                // Update the URL hash
-                window.history.replaceState(null, null, '#' + tabId + '/' + newAnchorId);
-                // Update anchorId variable
-                anchorId = newAnchorId;
-                // Scroll to the new anchor
-                scrollToAnchor(newAnchorId);
-              }
+        // **Initialize hoverdir plugin on dynamically loaded content**
+        initializeHoverDir(contentDivId);
+
+        // Attach click handler for internal links
+        $(contentDivId).off('click', 'a').on('click', 'a', function (e) {
+          var href = $(this).attr('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault(); // Prevent default behavior
+            var newAnchorId = href.substring(1);
+            if (document.getElementById(newAnchorId)) {
+              // Update the URL hash
+              window.history.replaceState(null, null, '#' + tabId + '/' + newAnchorId);
+              // Update anchorId variable
+              anchorId = newAnchorId;
+              // Scroll to the new anchor using the new scrolling method
+              scrollToAnchor(newAnchorId);
             }
-          });
-        }, 0); // Timeout of 0 to allow rendering
+          }
+        });
+      }).fail(function () {
+        // Handle load failure
+        $(contentDivId).html('<p>Error loading content.</p>');
       });
     }
 
-    // Function to scroll to a specific anchor
+    // Function to scroll to a specific anchor using the new scrolling method
     function scrollToAnchor(anchorId) {
-      var target = document.getElementById(anchorId);
-      if (target) {
-        // Adjust the scroll position (e.g., subtract fixed header height)
+      var targetSelector = '#' + anchorId;
+      var $target = $(targetSelector);
+      if ($target.length) {
         var headerOffset = 20; // Adjust this value based on your header height
-        var elementPosition = target.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-        window.scrollTo({
-          top: offsetPosition,
-          //behavior: 'smooth',
-        });
+        // Animate the scroll to the destination...
+        $('html, body').animate(
+          {
+            scrollTop: $target.offset().top - headerOffset // Scroll to this location.
+          },
+          {
+            // Set the duration long enough to allow time for lazy loading elements
+            duration: 1500,
 
-        // Apply scaling effect
-        target.classList.add('scale-animation');
-        // Remove the class after the animation is done
-        setTimeout(function () {
-          target.classList.remove('scale-animation');
-        }, 1100); // Adjust timing to match animation duration
+            // At each animation step, check whether the target has moved.
+            step: function (now, fx) {
+              // Where is the target now located on the page?
+              var newOffset = $target.offset().top - headerOffset;
+
+              // If the target's position has changed, update the scroll destination
+              if (fx.end !== newOffset) {
+                fx.end = newOffset;
+              }
+            }
+          }
+        );
       }
+    }
+
+    // **Function to initialize hoverdir plugin on loaded content**
+    function initializeHoverDir(contentDivId) {
+      // Find all the elements that need hoverdir within the loaded content
+      $(contentDivId).find('#da-thumbs > li').each(function () {
+        $(this).hoverdir();
+      });
     }
 
     // Initial content load
@@ -437,7 +304,7 @@
   });
 </script>
 
--->
+
 
 
 

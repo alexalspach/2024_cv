@@ -6,6 +6,7 @@
 html {
 	overflow: -moz-scrollbars-vertical;
 	overflow: scroll;/*background: #000000;*//* url('img/dotted-bg.png') nrepeat fixed center; */
+	scroll-behavior: smooth;
 }
 body {
 	padding-top: 20px;
@@ -55,22 +56,9 @@ h4, .h4 {
 	font-weight: 500;
 }
 
-.circle {
-	
-	border: 2px solid #E89C0C;
-	
-	-webkit-border-radius: 50em;
-	-moz-border-radius: 50em;
-	border-radius: 50em;
-	
-	/*border: solid 1px #374746;*/
-	
-	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
-}
 
 h1, h2, h3 {
-	padding-top: 40px;
+	padding-top: 25px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -108,8 +96,10 @@ h1 a:active {
 
 h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
+
+
 
 
 
@@ -165,93 +155,108 @@ tr #year.hidden {
 	border: 1px solid #374746;
 	/*border-bottom: none;*/
   /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          border-bottom:none;*/
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-bottom:none;*/
           
-      }
+}
 
-      #header-text {
-      	
-      	margin-bottom: -13px;
-      	background-color: white;
-      	
-      	padding-left:15px;
-      	padding-right:15px;
-      	padding-bottom: 10px;
-      	
-      	margin-left:15px;
-      	margin-right:15px;
+#header-text {
 
-      	padding-top: 0px;
-      	margin-top: 20px;
-      	
-      	display: inline-block;
-      }
+	margin-bottom: -13px;
+	background-color: white;
 
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom: 27px;
 
-      #footer{
-      	font-size:90%;
-      	/*color:#888888;*/
-      	color:#777;
-      	text-align:center;
-      	padding-top:10px;
-      	padding-right:20px;
-      	
-      }
+	margin-left:15px;
+	margin-right:15px;
 
-      #footer-links{
-      	font-size:90%;
-      	/*color:#888888;*/
-      	color:#777;
-      	text-align:center;
-      	padding-top:10px;
-      	padding-right:20px;
-      	
-      }
+	padding-top: 0px;
+	margin-top: 20px;
+
+	display: inline-block;
+}
 
 
-      h1,
-      h2,
-      h3,
-      /*h4,*/
-      h5,
-      h6,
-      .h1,
-      .h2,
-      .h3,
-      /*.h4,*/
-      .h5,
-      .h6 {
-      	font-weight: 700;
-      }
+#footer{
 
-      h1 small,
-      h2 small,
-      h3 small,
-      h4 small,
-      h5 small,
-      h6 small,
-      .h1 small,
-      .h2 small,
-      .h3 small,
-      .h4 small,
-      .h5 small,
-      .h6 small {
-      	color: #777;
-      }
+	font-size:90%;
+	/*color:#888888;*/
+	color:#777;
+	text-align:center;
+	padding-top:10px;
+	padding-right:20px;
 
-     h4,
-     .h4 {
-		font-weight: 500;
-	}
+}
+
+#footer-links{
+
+	font-size:90%;
+	/*color:#888888;*/
+	color:#777;
+	text-align:center;
+	padding-top:10px;
+	padding-right:20px;
+
+}
 
 
+h1,
+h2,
+h3,
+/*h4,*/
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+/*.h4,*/
+.h5,
+.h6 {
+	font-weight: 700;
+}
 
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+	color: #777;
+	line-height: 1.5;
+}
 
-
+h4,
+.h4 {
+	font-weight: 500;
+}
 
 
 
+
+
+
+
+.circle {
+	
+	border: 2px solid #E89C0C;
+	
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	
+	/*border: solid 1px #374746;*/
+	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+}
 
 
 
@@ -316,15 +321,6 @@ tr #year.hidden {
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
 }
 
-.media-youtube-fullwidth {
-
-	display:inline-block;
-	
-	width:100%;
-	height:460px;	
-	
-	margin-top: 10px;
-}
 
 
 .media-flex-container{
@@ -338,21 +334,29 @@ tr #year.hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0px;
+}
+
+
+.media-youtube-fullwidth {
+	width:100%;
+	height:460px;	
+}
+
+.media-flex-youtube-halfwidth {
+	width:49.5%;;
+	height:228px;	
 }
 
 
 .media-flex-img-fullwidth {
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .media-flex-img-halfwidth {
 	width:49.5%;
 }
-.media-flex-youtube-halfwidth {
-	width:49.5%;;
-	height:228px;	
-}
+
 .media-flex-img-thirdwidth {
 	width:33%;
 }
@@ -789,8 +793,9 @@ iframe {
 #time-place-table {
 	
 	/*margin-right: 15px;*/
-	margin-top: 15px;
+	margin-top: 0px;
 	margin-left: 0px;
+	margin-bottom: 25px;
 }
 
 #top-link-table {
@@ -891,6 +896,9 @@ a.flip-colors:hover {
 	margin-top: 15px;
 }
 
+.work-title {
+	margin-bottom: -20px;
+}
 
 #link-table {
 	
@@ -1111,7 +1119,7 @@ Maybe dumb the footer unless descriptions will be added*/
 }
 
 #tags {
-	padding-top: 25px;
+	padding-top: 35px;
 	margin-left: -1px;
 }
 
