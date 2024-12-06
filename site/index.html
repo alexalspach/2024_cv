@@ -3,11 +3,26 @@
    
 
     <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PC3XHFQMN"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-0PC3XHFQMN');
+        </script>
+
+
+
         <link rel="icon" 
               type="image/png" 
               href="assets/favicons/favicon.png">
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width">
+
         <title>Alex Alspach</title>
 
         <link href="assets/styles/bootstrap310/css/bootstrap.css" rel="stylesheet" media="screen">
@@ -19,7 +34,6 @@
 
 
         <link href="assets/styles/css/index_style.css" rel="stylesheet" media="screen">
-        <link href="assets/styles/css/index_buttons.css" rel="stylesheet" media="screen">
 
         <link href="assets/styles/css/hovercss/hover.css" rel="stylesheet" media="screen">
     </head>
@@ -40,10 +54,12 @@
                 <img class ="header-img" src="assets/images/backgrounds/AlexPaintHeader.jpg">
             </div>
 
-            <div id = "buttons"> 
-                <a href="resume/" class="btn btn-outline-inverse btn-lg">Resume</a>
-                <a href="cv/" class="btn btn-outline-inverse btn-lg" style="border-radius: 0 0 10px 0;">All Projects / CV</a> 
-            </div>            
+            <div id = "button_container"> 
+                <div id = "buttons"> 
+                    <a href="resume/" class="btn btn-outline-inverse btn-lg">Resume</a>
+                    <a href="cv/" class="btn btn-outline-inverse btn-lg" style="border-radius: 0 0 10px 0;">All Projects / CV</a> 
+                </div>   
+            </div>         
 
             
                 
@@ -73,7 +89,7 @@
 
                 <div class="sortable-div all tri manipulation humanoids">
         
-                    <div class="well" name="bdtri" id="bdtri">
+                    <div class="well" name="BDTRI" id="BDTRI">
 
                         <div class="project-title">Boston Dynamics and Toyota Research Team Up on Robots</div>
 
@@ -138,10 +154,10 @@
 -->
                 <div class="sortable-div all tri soft tactile manipulation hri designmfg hwdev humanoids videos">
         
-                    <div class="well" name="Punyo_2" id="Punyo_2">
+                    <div class="well" name="Punyo2" id="Punyo2">
 
                         <div class="project-title">
-                            <a class="project-title-more-info-link" href="">
+                            <a class="project-title-more-info-link" href="cv/#projects/Punyo2">
                                 Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research
                             </a>
                         </div>
@@ -155,7 +171,7 @@
                                     <p><strong>Tech Lead and Senior Manager. </strong>From project pitch, hiring and project management, to integration of our philosophy and expertise into TRI's Large Behavior Models division, I built and led a passionate, multidisciplinary team on a mission to help people with the bigger, bulkier tasks in everyday life. We built a research platform, <i>Punyo</i>, that embodies this mission.</p>
 
                                     The Punyo team focused on whole-body manipulation using the robot's arms and chest to complement TRI’s other efforts in fine robot hand and gripper-based dexterity. We continue to to develop new hardware and algorithms that enable truly capable robots to share our homes, physically interact with us, and help us move and manipulate large, heavy, and unwieldy items. 
-                                    <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8"><strong>[<u>blog post</u>]</strong></a> / <a target="_blank" href=""><strong>[<u>project page</u>]</strong></a>
+                                    <a target="_blank" href="https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8"><strong>[<u>blog post</u>]</strong></a> / <a href="cv/#projects/Punyo2"><strong>[<u>project page</u>]</strong></a>
                                 </div>
 
                             </div>
@@ -287,13 +303,13 @@
                             
                             <div style="width:80%;">
                                 <div class="project-title">
-                                    <a href="">
+                                    <a href="cv/#projects/SoftBubbleGrip1">
                                         Soft-Bubble Grippers for Robust and Perceptive Manipulation
                                     </a>
                                 </div>
                                 
                                 <div class="project-description">
-                                    <strong>Designed and developed highly-compliant, visuotactile gripper</strong> with pressure, geometry, and shear force sensing for robust, perceptive, and controlled manipulation and human-robot interaction. Shared design and build instructions publically to promote visuotactile sensing and compliant manipulation in both acedemia and industry. <a target="_blank" href=""><strong>[<u>project page</u>]</strong></a> / <a target="_blank" href="https://punyo.tech"><strong>[<u>punyo.tech</u>]</strong></a>
+                                    <strong>Designed and developed highly-compliant, visuotactile gripper</strong> with pressure, geometry, and shear force sensing for robust, perceptive, and controlled manipulation and human-robot interaction. Shared design and build instructions publically to promote visuotactile sensing and compliant manipulation in both acedemia and industry. <a target="_blank" href="https://punyo.tech"><strong>[<u>punyo.tech</u>]</strong></a> / <a href="cv/#projects/SoftBubbleGrip1"><strong>[<u>project page</u>]</strong></a>
                                 </div>
                             </div>
 
@@ -344,13 +360,13 @@
                     <div class="well" name="SoftUpper" id="SoftUpper">
 
                         <div class="project-title">
-                            <a href="">
+                            <a href="cv/#projects/SoftUpper">
                                 Design of a Soft Upper Body Robot for Physical Human-Robot Interaction
                             </a>
                         </div>
                         
                         <div class="project-description">
-                            <strong>Designed and developed a huggable, toy-sized robot with a soft skin</strong> robust to playful physical interaction. The upper body, including the arms, belly, chest, and back, has soft 3D-printed air-filled <i>bubbles</i> connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. This soft tactile-sensing skin covers underlying actuators, the rigid 3D-printed frame, and 3D-printed bearings. <a target="_blank" href=""><strong>[<u>project page</u>]</strong></a>
+                            <strong>Designed and developed a huggable, toy-sized robot with a soft skin</strong> robust to playful physical interaction. The upper body, including the arms, belly, chest, and back, has soft 3D-printed air-filled <i>bubbles</i> connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. This soft tactile-sensing skin covers underlying actuators, the rigid 3D-printed frame, and 3D-printed bearings. <a href="cv/#projects/SoftUpper"><strong>[<u>project page</u>]</strong></a>
                         </div>
 
                         <!--
@@ -454,13 +470,13 @@
                     <div class="well" name="SnapBot1" id="SnapBot1">
 
                         <div class="project-title">
-                            <a href="">
+                            <a href="cv/#projects/SnapBot1">
                                 Snapbot: A Reconfigurable Legged Robot
                             </a>
                         </div>
 
                         <div class="project-description">
-                            <strong>Designed and developed experimental modular hardware</strong> for Snapbot, a reconfigurable legged robot that is able to walk using various locomotion styles as its legs get removed, reattached, and swapped around. <a target="_blank" href=""><strong>[<u>project page</u>]</strong></a>
+                            <strong>Designed and developed experimental modular hardware</strong> for Snapbot, a reconfigurable legged robot that is able to walk using various locomotion styles as its legs get removed, reattached, and swapped around. <a href="cv/#projects/SnapBot1"><strong>[<u>project page</u>]</strong></a>
                         </div>
 
                         <!--
@@ -520,13 +536,13 @@
                     <div class="well" name="ActiveStudio" id="ActiveStudio">
                         
                         <div class="project-title">
-                            <a href="">
+                            <a href="cv/#projects/ActiveStudio">
                                 Maverick Robot Animation User Interface and Software Development
                             </a>
                         </div>
 
                         <div class="project-description">
-                            <strong>Designed and developed robot control user interface</strong> for a 3ds Max-based toolset that allows digital artists to animate and contrain high degree of freedom robotsm working closely with end users, including professional artists and producers, to create a comfortable interface that inspires creative, productive, and cutting edge results. <a target="_blank" href=""><strong>[<u>project page</u>]</strong></a>
+                            <strong>Designed and developed robot control user interface</strong> for a 3ds Max-based toolset that allows digital artists to animate and contrain high degree of freedom robotsm working closely with end users, including professional artists and producers, to create a comfortable interface that inspires creative, productive, and cutting edge results. <a href="cv/#projects/ActiveStudio"><strong>[<u>project page</u>]</strong></a>
                         </div>
 
                         <!--
@@ -572,28 +588,7 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
             </div> 
-
-
-
-
-
-
-
-
-
-
 
         </div>
         
