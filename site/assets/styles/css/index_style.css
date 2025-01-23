@@ -94,7 +94,8 @@ a:hover{
 
 .header-img {
 	/*padding-left: 30px;*/
-	width: 750px;
+	/*width: 750px;*/
+	width: 100%;
 }
 
 #button_container{
