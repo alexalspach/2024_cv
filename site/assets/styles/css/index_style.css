@@ -129,6 +129,17 @@ a:hover{
 
 }
 
+
+#news{
+	position: relative;
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 780px;
+
+	margin-bottom: 20px;
+}
+
+
 #select_content{
 	position: relative;
 	margin-left: 30px;
@@ -144,6 +155,16 @@ a:hover{
 	border: 1px solid #3680a9;
 	
 }
+
+.well-timeline{
+	border: 1px solid #72b4d9;
+}
+
+.well-timeline-newest{
+	border: 2px solid #3680a9;
+}
+
+
 
 .media-shadow{
 	-webkit-filter: none;
@@ -327,6 +348,14 @@ a:hover{
 		justify-content: center;
 		flex-direction: column;
 	}
+
+
+	#news {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 
 	#index_header{
 		margin-top: 120px;

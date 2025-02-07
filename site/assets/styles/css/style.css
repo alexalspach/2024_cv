@@ -287,6 +287,91 @@ h4,
   margin-bottom: 00px;
 }
 
+
+
+
+.well-timeline {
+	margin-top: 15px;	
+	margin-left: 30px;
+	width: 100%;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	position: relative;
+
+}
+
+
+
+/* DOT (square, circle if border radius is 50%) overlayed on your vertical timeline */
+.well-timeline::before {
+    content: "";
+    position: absolute;
+    /* 
+       Place the dot so its CENTER aligns with your timeline line.
+       For example, if your timeline is about 15px to the left of .well-timeline,
+       you might set left to around -45px so it lines up with the vertical line.
+    */
+    left: -41px; 
+    top: 14px;            /* Vertical offset so it appears near the top of the well */
+    width: 19px;
+    height: 19px;
+    border-radius: 0%;   /* Make it a circle */
+    background-color: #428bca; /* Dot color (Bootstrap “primary”) */
+    border: 3px solid #fff;    /* Optional white border ring */
+    z-index: 1;           /* Ensure dot is above the line, if needed */
+}
+
+
+/* HORIZONTAL LINE connecting the dot to the .well-timeline content */
+.well-timeline::after {
+    content: "";
+    position: absolute;
+    /* 
+       Start the horizontal line near the circle’s right edge, 
+       then stretch it to the edge of the .well container (0px).
+    */
+    left: -30px;     
+    top: 23px;       /* ~ center of the dot (20px + half the dot’s height) */
+    width: 30px;     /* horizontal distance from the dot to the well’s text area */
+    height: 1px;     /* thickness of the connecting line */
+    background-color: #72b4d9; /* match your timeline color */
+    z-index: -1;      /* behind the circle if you want the circle on top */
+}
+
+
+
+
+
+
+.well-timeline-link{
+  color: inherit;               /* inherit text color from parent */
+  text-decoration: none;        /* no underline */
+  display: block;               /* ensure the entire .well is clickable */
+}
+
+.well-timeline-link:hover,
+.well-timeline-link:focus,
+.well-timeline-link:visited {
+  color: inherit;               /* stay the same color on hover, focus, visited */
+  text-decoration: none;
+}
+
+/* Optional: show a pointer cursor + subtle hover background for the well */
+.well-timeline-link .well-timeline:hover {
+  /*background-color: #f9f9f9; */    /* or #f0f0f0, etc. */
+  cursor: pointer;              /* makes it obvious the block is clickable */
+  
+  -webkit-box-shadow: #C3A063 3px 3px;
+  box-shadow: #C3A063 3px 3px ;
+
+}
+
+
+
+
+
 .well-media {
 	margin-top: 30px;	
 	width: 100%;
@@ -370,6 +455,46 @@ h4,
 
 
 
+
+.timeline {
+  position: relative;
+  padding-bottom: 30px;
+  /*border-left: 1px solid #72b4d9;*/ /* the vertical line */
+}
+
+.timeline-year {
+  position: relative;
+  /*margin-left: 30px;*/ /*Aligns with timeline boxes*/
+  margin-left: -21px; /*Sits on left timeline line*/
+  margin-bottom: -10px;
+  margin-top: 20px;
+  background-color: white;
+
+  color: #666;
+  font-weight: 300;
+
+  /*font-size: 24px;*/ /*Aligns with timeline boxes*/
+  font-size: 21px; /*Sits on left timeline line*/
+
+  /*border-left: 1px solid #72b4d9;*/ /* the vertical line */
+}
+
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0px;             /* adjust to position the line exactly where you want */
+  top: 0;                 /* start at the top of .timeline */
+  bottom: 0;              /* stretch to the bottom of .timeline */
+  width: 1px;             /* line thickness */
+  z-index: 0;             /* behind timeline items, if needed */
+  background: linear-gradient(
+    to bottom,         /* direction of the gradient */
+    #72b4d9 0%,           /* solid color at the top */
+    #72b4d9 80%,          /* keep color up to ~80% height */
+    transparent 100%   /* fade to transparent at the bottom */
+  );
+}
 
 
 
@@ -890,6 +1015,25 @@ a.flip-colors:hover {
 .project-title {
 	font-size: 21px;
 	font-weight: 700;
+}
+
+.news-title {
+	font-size: 18px;
+	font-weight: 600;
+	position: relative;
+}
+
+.news-date {
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+
+
+.news-content {
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
 }
 
 .project-description {
