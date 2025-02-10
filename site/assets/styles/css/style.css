@@ -313,16 +313,24 @@ h4,
        For example, if your timeline is about 15px to the left of .well-timeline,
        you might set left to around -45px so it lines up with the vertical line.
     */
-    left: -41px; 
-    top: 14px;            /* Vertical offset so it appears near the top of the well */
+
+		/* Vertical offset so it appears near the top of the well */
+		top: 15.5px;
+		left: -38px;
+	  width: 17px;
+	  height: 17px;
+
+    /* Vertical offset so it appears near the top of the well */
+		/*top: 14px;  
+    left: -41px;        
     width: 19px;
-    height: 19px;
+    height: 19px;*/
+
     border-radius: 0%;   /* Make it a circle */
-    background-color: #428bca; /* Dot color (Bootstrap “primary”) */
+    background-color: #72b4d9; /* Dot color (Bootstrap “primary”) */
     border: 3px solid #fff;    /* Optional white border ring */
     z-index: 1;           /* Ensure dot is above the line, if needed */
 }
-
 
 /* HORIZONTAL LINE connecting the dot to the .well-timeline content */
 .well-timeline::after {
@@ -335,9 +343,19 @@ h4,
     left: -30px;     
     top: 23px;       /* ~ center of the dot (20px + half the dot’s height) */
     width: 30px;     /* horizontal distance from the dot to the well’s text area */
-    height: 1px;     /* thickness of the connecting line */
+    height: 0.5px;     /* thickness of the connecting line */
     background-color: #72b4d9; /* match your timeline color */
     z-index: -1;      /* behind the circle if you want the circle on top */
+}
+
+
+.well-timeline-newest::before {
+    background-color: #3680a9; /* match your timeline color */
+}
+
+.well-timeline-newest::after {
+    height: 1px;     /* thickness of the connecting line */
+    background-color: #3680a9; /* match your timeline color */
 }
 
 
@@ -459,13 +477,14 @@ h4,
 .timeline {
   position: relative;
   padding-bottom: 30px;
+  margin-left: 5px;
   /*border-left: 1px solid #72b4d9;*/ /* the vertical line */
 }
 
 .timeline-year {
   position: relative;
-  /*margin-left: 30px;*/ /*Aligns with timeline boxes*/
-  margin-left: -21px; /*Sits on left timeline line*/
+  margin-left: 30px; /*Aligns with timeline boxes*/
+  /*margin-left: -21px;*/ /*Sits on left timeline line*/
   margin-bottom: -10px;
   margin-top: 20px;
   background-color: white;
@@ -473,8 +492,8 @@ h4,
   color: #666;
   font-weight: 300;
 
-  /*font-size: 24px;*/ /*Aligns with timeline boxes*/
-  font-size: 21px; /*Sits on left timeline line*/
+  font-size: 24px; /*Aligns with timeline boxes*/
+  /*font-size: 21px;*/ /*Sits on left timeline line*/
 
   /*border-left: 1px solid #72b4d9;*/ /* the vertical line */
 }
