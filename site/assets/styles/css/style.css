@@ -527,16 +527,34 @@ h4,
 
 .img-bd-tri-atlas-well-sticker
 {
-	height: 372px;
+  height: 245px;
   margin-right: -36px;
-  margin-top: -81px;
-  margin-bottom: -20px;
-  margin-left: 15px;
+  margin-top: -70px;
+  margin-bottom: -40px;
+  margin-left: 5px;
+}
+
+.img-lbm1-well-sticker
+{
+  height: 232px;
+  margin-right: -35px;
+  margin-top: -50px;
+  margin-bottom: -40px;
+  margin-left: 22px;
+}
+
+.img-punyo-watermelon-well-sticker
+{
+  height: 372px;
+  margin-right: -36px;
+  margin-top: -115px;
+  margin-bottom: -160px;
+  margin-left: 25px;
 }
 
 .img-punyo-heart-well-sticker
 {
-	height: 204px;
+  height: 204px;
   margin-left: 5px;
   margin-top: -6px;
   margin-right: -44px;
@@ -545,7 +563,7 @@ h4,
 
 .img-bubble-loose-grips-well-sticker
 {
-	height: 205px;
+  height: 205px;
   margin-left: 0px;
   margin-top: -125px;
   margin-right: -25px;
