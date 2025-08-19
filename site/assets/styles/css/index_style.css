@@ -170,7 +170,7 @@ a:hover{
 	-webkit-filter: none;
 	filter: none;
 	box-shadow: none;
-	border: 0px solid #666;
+	border: 1px solid #d0d0d0;
 
 }
 
