@@ -477,6 +477,7 @@ h4,
 .timeline {
   position: relative;
   padding-bottom: 30px;
+  margin-right: 30px;
   margin-left: 5px;
   /*border-left: 1px solid #72b4d9;*/ /* the vertical line */
 }

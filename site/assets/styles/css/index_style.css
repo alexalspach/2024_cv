@@ -88,8 +88,8 @@ a:hover{
 	margin-top: 180px;
 	margin-bottom: 0px;
 	margin-left: 30px;	
-	
-	width: 780px;
+    margin-right: 30px;
+    width: 860px;
 }
 
 .header-img {
@@ -134,7 +134,7 @@ a:hover{
 	position: relative;
 	margin-left: 30px;
 	margin-right: 30px;
-	width: 780px;
+	width: 860px;
 
 	margin-bottom: 20px;
 }

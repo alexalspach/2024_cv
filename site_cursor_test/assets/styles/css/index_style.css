@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.wrapper {
+  overflow: visible; /* Ensure no overflow properties interfere */
+}
+
+html {
+	/*overflow: -moz-scrollbars-vertical;*/
+	/*overflow: hidden;*/
+	
+}
+
+body {
+	background-color: #fff;
+	/*background-color: #fff;*/
+	/*background: url('img/dotted-bg.png') repeat;*/  /* background: #000000; */
+	/*background: #F2F2F2;*/
+	
+	min-width:440px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+h1, .h1 {
+	font-weight: 700;
+	font-size: 60px;
+	/*margin-bottom: 0px;*/
+}
+
+h3, .h3 {
+/*color: #666;*/
+
+	font-weight:300;
+}
+
+
+
+a{
+	color: #333;
+}
+
+a:hover{
+	color: #E89C0C;
+}
+
+.project-title-more-info-link {
+	color: #333;
+}
+.project-title-more-info-link:hover {
+	color: #E89C0C;
+}
+
+
+
+.container-narrow {
+	/*margin: 0 auto;*/
+	max-width: 900px;	
+}
+
+
+
+/*
+#header {
+
+	font-size: 8em;
+    font-weight: bold;
+    line-height: 1;
+
+	padding-top: 15%;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+	max-width: 750px;
+	
+	color: white;
+		
+}
+*/
+
+#index_header
+{
+	margin-top: 180px;
+	margin-bottom: 0px;
+	margin-left: 30px;	
+	
+	width: 780px;
+}
+
+.header-img {
+	/*padding-left: 30px;*/
+	/*width: 750px;*/
+	width: 100%;
+}
+
+#button_container{
+	position: sticky;
+	top: 0px;
+  	z-index: 99;
+
+	width: 860px;
+	margin-left: 30px;
+	margin-bottom: 50px;
+	background-color: transparent;
+
+}
+
+#buttons {
+  
+  margin-left: 0px;
+  background-color: white;
+  width: 301px;
+  
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-radius: 0 0 18px 0;
+}
+
+#quote {
+	color: black;
+	/*padding-top: 50px;*/
+	padding-top: 10px;
+	padding-left: 30px;
+
+}
+
+
+#news{
+	position: relative;
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 780px;
+
+	margin-bottom: 20px;
+}
+
+
+#select_content{
+	position: relative;
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 860px;
+}
+
+
+.well{
+
+	background-color: white;
+	box-shadow: none;
+	border: 1px solid #3680a9;
+	
+}
+
+.well-timeline{
+	border: 1px solid #72b4d9;
+}
+
+.well-timeline-newest{
+	border: 2px solid #3680a9;
+}
+
+
+
+.media-shadow{
+	-webkit-filter: none;
+	filter: none;
+	box-shadow: none;
+	border: 1px solid #d0d0d0;
+
+}
+
+.label-info {
+	background-color: #030635;
+}
+
+
+
+#push {
+
+	margin-left: 300px;
+
+}
+
+.project-title-more-info-link {
+	color: #333;
+}
+.project-title-more-info-link:hover {
+	color: #E89C0C;
+}
+
+
+
+
+
+
+
+
+/* Clip text element */
+.clip-text {
+
+    position: relative;
+    display: inline-block;
+    /*margin: .25em;
+    padding: .5em .75em;
+    text-align: center;*/
+    /* Color fallback */
+
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    background-image: url(../../images/backgrounds/paint.jpg);
+    background-color:white;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    background-color: #fff;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+.btn-outline-inverse {
+	/*border-color: #FFFFFF;	
+	background-color: white;
+	color: #374746;*/
+	background-color: transparent;
+	color: #000;
+	/*border: 1px solid white;*/
+	border: 1px solid #3680a9;
+	
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
+	
+	background-color: white;
+	/*color: #FFFFFF;*/
+	/*border-color: #3680a9;*/
+	border-color: #000;
+	color: #000;
+	
+	/*transform: scale(1.02);*/
+
+	padding-left: 18px;
+	padding-right: 22px;
+
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	
+}
+
+.btn-lg {
+	margin-left: 0px;
+	margin-right: 10px;
+	/*width: 120px;*/
+	border-radius: 0px;
+
+	background-color: white;
+}
+
+
+.btn-xs {
+	font-size: 10px;
+	margin-left: 0px;
+	margin-right: 3px;
+	min-width: 50px;
+	
+	background-color: transparent;
+	color: black;
+	/*border: 1px solid white;*/
+	border: 1px solid #999;
+}
+
+.btn-xs:hover, .btn-xs:focus, .btn-xs:active {
+	border-color: white;
+	background-color: transparent;
+	color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+	#select_content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+	#news {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+	#index_header{
+		margin-top: 120px;
+	
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}	
+
+	#button_container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	
+		
+	#button_container{
+		margin-bottom: 50px;
+	}
+
+	#buttons{
+		width: 485px;
+ 	 	padding-top: 12px;
+  		padding-bottom: 15px;
+	}
+
+	.btn-lg {
+		margin-right: 10px;
+		font-size: 2.5em;
+	}
+}
+
