@@ -1,0 +1,5 @@
+# Test harness virtualenv (recreate with: python3 -m venv tests/.venv && tests/.venv/bin/pip install playwright)
+tests/.venv/
+
+# macOS
+.DS_Store

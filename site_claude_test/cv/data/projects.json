@@ -1,0 +1,875 @@
+{
+  "_README": "HOW TO USE: edit this file + the matching cv/projects/<id>.html write-up, then run 'python3 tools/build.py'. Do NOT edit cv/projects.html by hand (it is generated). Full guide: AUTHORING.md. -- 'projects' = the facts (year, tags, featured, tocTitle); 'grid' = the thumbnail tiles (hero_img is auto-cropped to a square); 'cardOrder' = the order cards appear in (the contents list follows this, grouped by year); 'indexFeatured' = which projects show on the homepage; add \"hidden\": true to a project to park it without deleting.",
+  "projects": {
+    "BDTRI": {
+      "year": "2025",
+      "featured": true,
+      "tags": [
+        "videos",
+        "manipulation",
+        "humanoids",
+        "tri"
+      ],
+      "tocTitle": "Boston Dynamics and Toyota Research Team Up on Robots"
+    },
+    "LBM1": {
+      "year": "2025",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Large Behavior Models (LBM1.0)"
+    },
+    "Punyo2": {
+      "year": "2024",
+      "featured": true,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research"
+    },
+    "CWBB1": {
+      "year": "2024",
+      "featured": false,
+      "tags": [
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "swdev",
+        "international",
+        "disney",
+        "tri"
+      ],
+      "tocTitle": "Can We Build Baymax? Humanoids Conference Workshop Organizer (Annual)"
+    },
+    "Punyo1": {
+      "year": "2021",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Punyo-1: Whole-Body Manipulation and Physical Human-Robot Interaction"
+    },
+    "AudreyIII": {
+      "year": "2021",
+      "featured": false,
+      "tags": [
+        "videos",
+        "hri",
+        "designmfg",
+        "hwdev"
+      ],
+      "tocTitle": "Audrey III - Halloween Party Robot Speed Project"
+    },
+    "SoftBubbleGrip1": {
+      "year": "2020",
+      "featured": true,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Soft-Bubble Grippers for Robust and Perceptive Manipulation"
+    },
+    "DishLoading": {
+      "year": "2018",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "manipulation",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Compliant Fingers and Test Kitchen for Robotic Manipulation Capabilities Development"
+    },
+    "DenseGeom": {
+      "year": "2017",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "designmfg",
+        "hwdev",
+        "tri"
+      ],
+      "tocTitle": "Highly Compliant, Dense Geometry-Based Visuotactile Sensing"
+    },
+    "SoftArm1": {
+      "year": "2016",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "disney"
+      ],
+      "tocTitle": "Design and Fabrication of a Soft Robotic Hand and Arm System"
+    },
+    "SnapBot1": {
+      "year": "2016",
+      "featured": true,
+      "tags": [
+        "videos",
+        "designmfg",
+        "hwdev",
+        "disney"
+      ],
+      "tocTitle": "Snapbot: A Reconfigurable Legged Robot (IROS)"
+    },
+    "DesignOpt1": {
+      "year": "2016",
+      "featured": false,
+      "tags": [
+        "videos",
+        "designmfg",
+        "hwdev",
+        "disney"
+      ],
+      "tocTitle": "Task-Based Robot Limb and Joint Design Optimization (RSS, IROS 2016)"
+    },
+    "HuggingStudy": {
+      "year": "2016",
+      "featured": false,
+      "tags": [
+        "soft",
+        "hri",
+        "designmfg",
+        "hwdev",
+        "swdev",
+        "disney"
+      ],
+      "tocTitle": "Study of Children's Hugging for Interactive Robot Design (RO-MAN)"
+    },
+    "EMComm": {
+      "year": "2016",
+      "featured": false,
+      "tags": [
+        "videos",
+        "wearable",
+        "designmfg",
+        "hwdev",
+        "disney"
+      ],
+      "tocTitle": "EM-Comm: Touch-based Communication via Modulated Electromagnetic Emissions"
+    },
+    "SoftUpper": {
+      "year": "2015",
+      "featured": true,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "korea",
+        "disney"
+      ],
+      "tocTitle": "Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids)"
+    },
+    "SoftSkin": {
+      "year": "2015",
+      "featured": false,
+      "tags": [
+        "videos",
+        "soft",
+        "tactile",
+        "manipulation",
+        "hri",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "disney"
+      ],
+      "tocTitle": "3D Printed Soft Skin for Safe Human-Robot Interaction (IROS)"
+    },
+    "Earduino": {
+      "year": "2015",
+      "featured": false,
+      "tags": [
+        "videos",
+        "designmfg",
+        "hwdev"
+      ],
+      "tocTitle": "Earduino: Pocket-sized hearing loss prevention. Making Things Interactive Speed Project, CMU."
+    },
+    "ActiveStudio": {
+      "year": "2014",
+      "featured": true,
+      "tags": [
+        "videos",
+        "pathplanning",
+        "swdev",
+        "international",
+        "korea",
+        "simlab"
+      ],
+      "tocTitle": "Maverick (ActiveStudio) User Interface Design and Software Development"
+    },
+    "AllegroHand": {
+      "year": "2014",
+      "featured": false,
+      "tags": [
+        "videos",
+        "tactile",
+        "manipulation",
+        "designmfg",
+        "hwdev",
+        "swdev",
+        "international",
+        "korea",
+        "simlab"
+      ],
+      "tocTitle": "Allegro Hand Hardware and Software Development, Documentation, Support and Sales"
+    },
+    "AllegroArm": {
+      "year": "2014",
+      "featured": false,
+      "tags": [
+        "videos",
+        "manipulation",
+        "designmfg",
+        "hwdev",
+        "international",
+        "korea",
+        "simlab"
+      ],
+      "tocTitle": "Allegro Arm Robotic Hardware Development"
+    },
+    "AllegroDog": {
+      "year": "2013",
+      "featured": false,
+      "tags": [
+        "videos",
+        "designmfg",
+        "hwdev",
+        "international",
+        "korea",
+        "simlab"
+      ],
+      "tocTitle": "Allegro Dog Robotic Quadruped Development, Documentation and Customer Training"
+    },
+    "HumanoidPushing": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "hwdev",
+        "swdev",
+        "drexel",
+        "thesis"
+      ],
+      "tocTitle": "Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI)"
+    },
+    "HumanoidPushingThesis": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "hwdev",
+        "swdev",
+        "drexel",
+        "thesis"
+      ],
+      "tocTitle": "A Humanoid Robot Pushing Model Inspired by Human Motion (Master's Research)"
+    },
+    "DARwInDrives": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "mobilerobots",
+        "navigation",
+        "computervision",
+        "designmfg",
+        "hwdev",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Darwin-OP Drives (ICRA)"
+    },
+    "HuboThrowing": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "drexel"
+      ],
+      "tocTitle": "HUBO Throws the First Pitch for the Phillies"
+    },
+    "MiniFT": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "designmfg",
+        "drexel"
+      ],
+      "tocTitle": "Miniature Humanoid Force/Torque Sensing Foot and Ankle Design and Development"
+    },
+    "Legway": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "videos",
+        "mobilerobots",
+        "hwdev",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Lego Wheeled Inverted Pendulum Using Analog IMU"
+    },
+    "MobileRobots2": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "mobilerobots",
+        "pathplanning",
+        "navigation",
+        "computervision",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Computer Vision and Mobile Robot Navigation"
+    },
+    "LearningSyRoTek": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "videos",
+        "mobilerobots",
+        "navigation",
+        "swdev",
+        "international",
+        "drexel"
+      ],
+      "tocTitle": "Learning SyRoTek - A Collaboration Between Czech Tech and Drexel"
+    },
+    "6NewHubos": {
+      "year": "2012",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "international",
+        "drexel"
+      ],
+      "tocTitle": "Drexel Introduces Six New HUBOs (National Engineers Week)"
+    },
+    "MiddleSISTR": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Middle SISTR: Miniature Humanoid Gantry Ideas and Design Requirements"
+    },
+    "HumanoidRobotCollaborativeDocumentation2": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "international",
+        "korea",
+        "drexel",
+        "hubolab"
+      ],
+      "tocTitle": "Humanoid Robot (HUBO) Collaborative Documentation"
+    },
+    "MiniatureHumanoidManipulation": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "pathplanning",
+        "navigation",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Miniature Humanoid Path Planning and Manipulation"
+    },
+    "MEM435ProductDev": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "designmfg",
+        "hwdev",
+        "drexel"
+      ],
+      "tocTitle": "Product Development: Kangaroo Jumping Leg Biophysical Educational Model"
+    },
+    "RoboticsLabEval": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "navigation",
+        "computervision",
+        "swdev",
+        "international",
+        "korea",
+        "drexel",
+        "hubolab",
+        "simlab"
+      ],
+      "tocTitle": "RoboticsLab Software Evaluation and Tutorials"
+    },
+    "STEMHumanoidRobots": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "international",
+        "korea",
+        "hubolab"
+      ],
+      "tocTitle": "STEM through Humanoid Robots Presentation"
+    },
+    "HuboQ": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "videos",
+        "mobilerobots",
+        "international",
+        "korea",
+        "hubolab"
+      ],
+      "tocTitle": "Dynamic Mobile Robot (HuboQ) Presentation"
+    },
+    "HUBO2HumanoidRobot2": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "international",
+        "korea",
+        "hubolab"
+      ],
+      "tocTitle": "HUBO2 Humanoid Robot and STEM Presentation"
+    },
+    "HUBO2HumanoidRobot": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "international",
+        "korea",
+        "hubolab"
+      ],
+      "tocTitle": "HUBO2 Humanoid Robot Presentation"
+    },
+    "MiniatureHumanoidPathPlanning": {
+      "year": "2010",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "pathplanning",
+        "navigation",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Miniature Humanoid Path Planning and Dynamic Walking (AAAI)"
+    },
+    "MobileRobots1": {
+      "year": "2010",
+      "featured": false,
+      "tags": [
+        "videos",
+        "mobilerobots",
+        "pathplanning",
+        "navigation",
+        "swdev",
+        "drexel"
+      ],
+      "tocTitle": "Mobile Robot Mapping, Navigation and Obstacle Avoidance"
+    },
+    "MiniHuboMfg": {
+      "year": "2009",
+      "featured": false,
+      "tags": [
+        "videos",
+        "humanoids",
+        "designmfg",
+        "hwdev",
+        "drexel"
+      ],
+      "tocTitle": "MiniHUBO Fabrication and Assembly"
+    },
+    "SynexWearTest": {
+      "year": "2009",
+      "featured": false,
+      "tags": [
+        "designmfg",
+        "hwdev"
+      ],
+      "tocTitle": "Spinal Implant Product Failure Analysis and Next Generation Design"
+    },
+    "HumanoidRobotCollaborativeDocumentation": {
+      "year": "2011",
+      "featured": false,
+      "tags": [
+        "humanoids",
+        "international"
+      ],
+      "tocTitle": "Humanoid Robot (HUBO) Collaborative Documentation and Experience in Korea",
+      "hidden": true
+    }
+  },
+  "grid": [
+    {
+      "target": "BDTRI",
+      "thumb": "BDTRI1thumb.jpg",
+      "title": "BD + TRI Partnership",
+      "role": "Team Manager"
+    },
+    {
+      "target": "LBM1",
+      "thumb": "LBM1thumb.jpg",
+      "title": "LBM1.0",
+      "role": "Hands and Whole-Body Lead"
+    },
+    {
+      "target": "Punyo2",
+      "thumb": "MeetPunyothumb_2.jpg",
+      "title": "Punyo",
+      "role": "H/W Dev / Team Lead"
+    },
+    {
+      "target": "Punyo1",
+      "thumb": "Punyo1thumb.jpg",
+      "title": "Punyo-1",
+      "role": "H/W Dev / Team Lead"
+    },
+    {
+      "target": "AudreyIII",
+      "thumb": "AudreyIII1thumb.jpg",
+      "title": "Audrey III",
+      "role": "Halloween Speed Project"
+    },
+    {
+      "target": "CWBB1",
+      "thumb": "CWBB1thumb.jpg",
+      "title": "CWBB?",
+      "role": "Workshop Organizer"
+    },
+    {
+      "target": "SoftBubbleGrip1",
+      "thumb": "BubbleGripper1thumb.jpg",
+      "title": "Soft-Bubble Grippers",
+      "role": "H/W Dev, Team Lead"
+    },
+    {
+      "target": "DishLoading",
+      "thumb": "Finrays1thumb.jpg",
+      "title": "Compliant Fingers",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "DenseGeom",
+      "thumb": "DenseGeom2thumb.jpg",
+      "title": "Visuotactile Sensing",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "SoftArm1",
+      "thumb": "SoftHand1thumb.jpg",
+      "title": "Soft Robotic Hand and Arm",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "DesignOpt1",
+      "thumb": "Tetrabot1thumb.jpg",
+      "title": "Tetrabot",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "SnapBot1",
+      "thumb": "Snapbot1thumb.jpg",
+      "title": "Snapbot: A Reconfigurable Legged Robot",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "DesignOpt1",
+      "thumb": "DesignOpt1thumb.jpg",
+      "title": "Task-based Design Optimization",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "HuggingStudy",
+      "thumb": "HuggingStudy2thumb.jpg",
+      "title": "Hugging Study",
+      "role": "H/W and S/W Dev"
+    },
+    {
+      "target": "EMComm",
+      "thumb": "EMComm1thumb.jpg",
+      "title": "EM-Comm",
+      "role": "Wearable H/W Dev"
+    },
+    {
+      "target": "SoftUpper",
+      "thumb": "SoftUpper2thumb.jpg",
+      "title": "Soft Upper Body @ Disney",
+      "role": "Design and Dev"
+    },
+    {
+      "target": "SoftSkin",
+      "thumb": "softskin1thumb.jpg",
+      "title": "3D Printed Soft Skin",
+      "role": "Design and Dev"
+    },
+    {
+      "target": "Earduino",
+      "thumb": "Earduino1thumb.jpg",
+      "title": "Earduino",
+      "role": "Speed Project"
+    },
+    {
+      "target": "ActiveStudio",
+      "thumb": "ActiveStudio1thumb.jpg",
+      "title": "ActiveStudio",
+      "role": "Robot Animation Interfaces"
+    },
+    {
+      "target": "AllegroHand",
+      "thumb": "AllegroHand1thumb.jpg",
+      "title": "Allegro Hand",
+      "role": "H/W and S/W Dev"
+    },
+    {
+      "target": "AllegroArm",
+      "thumb": "AllegroArm2thumb.jpg",
+      "title": "Allegro Arm",
+      "role": "H/W Dev"
+    },
+    {
+      "target": "AllegroDog",
+      "thumb": "AllegroDog1thumb.jpg",
+      "title": "Allegro Dog",
+      "role": "Development and Customer Training"
+    },
+    {
+      "target": "HumanoidPushing",
+      "thumb": "HumanoidPushing1thumb.jpg",
+      "title": "Humanoid Pushing",
+      "role": "Masters Research"
+    },
+    {
+      "target": "DARwInDrives",
+      "thumb": "DarwinDriving1thumb.jpg",
+      "title": "DARwIn-OP Driving",
+      "role": "a Roomba!"
+    },
+    {
+      "target": "HuboThrowing",
+      "thumb": "HumanoidThrowing2thumb.jpg",
+      "title": "Hubo Throwing",
+      "role": "Phillies First Pitch"
+    },
+    {
+      "target": "MiniFT",
+      "thumb": "MiniFTfeet1thumb.jpg",
+      "title": "Mini Humanoid",
+      "role": "F/T Sensors"
+    },
+    {
+      "target": "Legway",
+      "thumb": "Legway1thumb.jpg",
+      "title": "LEGO Wheeled",
+      "role": "Inverted Pendulum"
+    },
+    {
+      "target": "MobileRobots2",
+      "thumb": "TreasureHunt1thumb.jpg",
+      "title": "Mobile Robot",
+      "role": "Vision and Navigation"
+    },
+    {
+      "target": "LearningSyRoTek",
+      "thumb": "SND1thumb.jpg",
+      "title": "Mobile Navigation",
+      "role": ""
+    },
+    {
+      "target": "6NewHubos",
+      "thumb": "SixHubos1thumb.jpg",
+      "title": "Six HUBOs",
+      "role": "at Drexel"
+    },
+    {
+      "target": "MiddleSISTR",
+      "thumb": "MiddleSISTR1thumb.jpg",
+      "title": "3-Axis Gantry",
+      "role": "for Mini Humanoids"
+    },
+    {
+      "target": "HumanoidRobotCollaborativeDocumentation2",
+      "thumb": "HUBOCollabDocs1thumb.jpg",
+      "title": "HUBO Wiki",
+      "role": "Collaborative Documentation"
+    },
+    {
+      "target": "MiniatureHumanoidManipulation",
+      "thumb": "MiniManipulation1thumb.jpg",
+      "title": "Mini Humanoid",
+      "role": "Planning and Manipulation"
+    },
+    {
+      "target": "MEM435ProductDev",
+      "thumb": "KangarooLeg1thumb.jpg",
+      "title": "Product Development",
+      "role": "Jumping Kangaroo Leg"
+    },
+    {
+      "target": "RoboticsLabEval",
+      "thumb": "rLabTutorials2thumb.jpg",
+      "title": "RoboticsLab",
+      "role": "Evaluation and Tutorials"
+    },
+    {
+      "target": "STEMHumanoidRobots",
+      "thumb": "SuwonStemPres1thumb.jpg",
+      "title": "STEM &amp; Humanoids",
+      "role": "Pres. in Suwon, S. Korea"
+    },
+    {
+      "target": "HuboQ",
+      "thumb": "HuboQ3thumb.jpg",
+      "title": "HuboQ",
+      "role": "Dynamic Mobile Robot"
+    },
+    {
+      "target": "HUBO2HumanoidRobot2",
+      "thumb": "KaistStem1thumb.jpg",
+      "title": "STEM w/ HUBO2",
+      "role": "at KAIST S. Korea"
+    },
+    {
+      "target": "MiniatureHumanoidPathPlanning",
+      "thumb": "MiniHuboAIII1thumb.jpg",
+      "title": "Mini Humanoid",
+      "role": "Path Planning and Dynamic Walking"
+    },
+    {
+      "target": "MobileRobots1",
+      "thumb": "MobileNavigation1thumb.jpg",
+      "title": "Mobile Robot",
+      "role": "Mapping and Navigation"
+    },
+    {
+      "target": "MiniHuboMfg",
+      "thumb": "MiniHuboMfg2thumb.jpg",
+      "title": "Mini Humanoid",
+      "role": "Manufacturing"
+    }
+  ],
+  "cardOrder": [
+    "BDTRI",
+    "LBM1",
+    "Punyo2",
+    "CWBB1",
+    "Punyo1",
+    "AudreyIII",
+    "SoftBubbleGrip1",
+    "DishLoading",
+    "DenseGeom",
+    "SoftArm1",
+    "SnapBot1",
+    "DesignOpt1",
+    "HuggingStudy",
+    "EMComm",
+    "SoftUpper",
+    "SoftSkin",
+    "Earduino",
+    "ActiveStudio",
+    "AllegroHand",
+    "AllegroArm",
+    "AllegroDog",
+    "HumanoidPushing",
+    "HumanoidPushingThesis",
+    "DARwInDrives",
+    "HuboThrowing",
+    "MiniFT",
+    "Legway",
+    "MobileRobots2",
+    "LearningSyRoTek",
+    "6NewHubos",
+    "MiddleSISTR",
+    "HumanoidRobotCollaborativeDocumentation2",
+    "HumanoidRobotCollaborativeDocumentation",
+    "MiniatureHumanoidManipulation",
+    "MEM435ProductDev",
+    "RoboticsLabEval",
+    "STEMHumanoidRobots",
+    "HuboQ",
+    "HUBO2HumanoidRobot2",
+    "HUBO2HumanoidRobot",
+    "MiniatureHumanoidPathPlanning",
+    "MobileRobots1",
+    "MiniHuboMfg",
+    "SynexWearTest"
+  ],
+  "indexFeatured": [
+    "BDTRI",
+    "Punyo2",
+    "SoftBubbleGrip1",
+    "SoftUpper",
+    "SnapBot1",
+    "ActiveStudio"
+  ]
+}

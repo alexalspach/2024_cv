@@ -1,0 +1,459 @@
+{
+  "_README": "HOW TO USE: edit this file + the matching cv/pubs/<id>.html write-up, then run 'python3 tools/build.py'. Do NOT edit cv/paperspatents.html by hand (it is generated). Full guide: AUTHORING.md. -- 'entries' = one line per paper (type journal/conference/thesis/bookchapter/blog); 'cardOrder' = the write-up order; 'patents' = a simple list (the freepatentsonline link is built from 'number').",
+  "entries": [
+    {
+      "type": "blog",
+      "year": "2025",
+      "tocTitle": "Large Behavior Models and Atlas Find New Footing (Boston Dynamics)",
+      "award": false,
+      "url": "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+      "card": false
+    },
+    {
+      "type": "blog",
+      "year": "2024",
+      "tocTitle": "Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research (Medium)",
+      "award": false,
+      "url": "https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8",
+      "card": false
+    },
+    {
+      "type": "journal",
+      "year": "2025",
+      "tocTitle": "A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation (TBA)",
+      "award": false,
+      "id": "LBM1paper",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2025",
+      "tocTitle": "Learning Contact-Rich Whole-Body Manipulation with Example-Guided Reinforcement Learning (Science Robotics)",
+      "award": false,
+      "id": "EGRL",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2024",
+      "tocTitle": "Don't Lose Your Grip: Enhanced Grasp and Contact Estimation with a Passive Particle Jamming Visuotactile End Effector (TBA)",
+      "award": false,
+      "id": "Grip",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2024",
+      "tocTitle": "Exploring Locally Linear Representations for Visuomotor and Tactile Control (RA-L, ICRA)",
+      "award": false,
+      "id": "Visuomotor",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2019",
+      "tocTitle": "Fast Model-Based Contact Patch and Pose Estimation for Highly Deformable Dense-Geometry Tactile Sensors (RA-L, ICRA)",
+      "award": true,
+      "id": "PatchContact",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2019",
+      "tocTitle": "A Transition-Aware Method for the Simulation of Compliant Contact with Regularized Friction (RA-L, ICRA)",
+      "award": false,
+      "id": "SmoothContact",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2018",
+      "tocTitle": "Computational Design of Robotic Devices from High-Level Motion Specifications (T-RO)",
+      "award": false,
+      "id": "CompDes2",
+      "card": true
+    },
+    {
+      "type": "journal",
+      "year": "2018",
+      "tocTitle": "Computational Co-Optimization of Design Parameters and Motion Trajectories for Robotic Systems (IJRR)",
+      "award": false,
+      "id": "CompDes1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2025",
+      "tocTitle": "PAPRLE (Plug-And-Play Robotic Limb Environment): A Modular Ecosystem for Robotic Limbs",
+      "award": false,
+      "id": "PAPRLE",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2022",
+      "tocTitle": "SEED: Series Elastic End Effectors in 6D for Visuotactile Tool Use (IROS)",
+      "award": false,
+      "id": "SEED",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2022",
+      "tocTitle": "Punyo-1: Soft Tactile-Sensing Upper-Body Robot for Large Object Manipulationand Physical Human Interaction (RoboSoft)",
+      "award": false,
+      "id": "Punyo1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2021",
+      "tocTitle": "Variable Compliance and Geometry Regulation of Soft-Bubble Grippers with Active Pressure Control (RoboSoft)",
+      "award": false,
+      "id": "ActivePressure1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2021",
+      "tocTitle": "Monocular Depth Estimation for Soft Visuotactile Sensors (RoboSoft)",
+      "award": false,
+      "id": "Monocular1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2020",
+      "tocTitle": "Soft-Bubble Grippers for Robust and Perceptive Manipulation (IROS)",
+      "award": false,
+      "id": "BubbleGripper1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2019",
+      "tocTitle": "Soft-bubble: A highly compliant dense geometry tactile sensor for robot manipulation (RoboSoft)",
+      "award": false,
+      "id": "SoftBubble",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2018",
+      "tocTitle": "Design and Fabrication of a Soft Robotic Hand and Arm System (RoboSoft)",
+      "award": false,
+      "id": "SoftArm",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2017",
+      "tocTitle": "Snapbot: A Reconfigurable Legged Robot (IROS)",
+      "award": false,
+      "id": "Snapbot1",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2017",
+      "tocTitle": "Joint Optimization of Robot Design and Motion Parameters using the Implicit Function Theorem (RSS)",
+      "award": true,
+      "id": "ImpFuncTheor",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2016",
+      "tocTitle": "Task-Based Limb Optimization for Legged Robots (IROS)",
+      "award": false,
+      "id": "LimbOptPaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2016",
+      "tocTitle": "Mechanical Implementation of a Variable-Stiffness Actuator for a Softly Strummed Ukulele (IROS)",
+      "award": false,
+      "id": "SoftUkelelePaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2016",
+      "tocTitle": "Study of Children's Hugging for Interactive Robot Design (RO-MAN)",
+      "award": false,
+      "id": "HuggingPaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2016",
+      "tocTitle": "Imitating Human Movement with Teleoperated Robotic Head (RO-MAN)",
+      "award": true,
+      "id": "TeleHeadPaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2015",
+      "tocTitle": "Design of a Soft Upper Body Robot for Physical Human-Robot Interaction (Humanoids)",
+      "award": true,
+      "id": "SoftUpperPaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2015",
+      "tocTitle": "Analyzing Muscle Activity and Force with Skin Shape Captured by Non-contact Visual Sensor (PSIVT)",
+      "award": false,
+      "id": "SkinShape",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2015",
+      "tocTitle": "3D Printed Soft Skin for Safe Human-Robot Interaction (IROS)",
+      "award": false,
+      "id": "SoftSkinPaper",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2012",
+      "tocTitle": "Controlling and Maximizing the Humanoid Robot Pushing Force by Postures (URAI)",
+      "award": false,
+      "id": "HumanoidRobotPushing",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2012",
+      "tocTitle": "A Humanoid Robot Pushing Model Inspired by Human Motion (Master's Thesis)",
+      "award": false,
+      "id": "HumanoidRobotPushingThesis",
+      "card": true
+    },
+    {
+      "type": "conference",
+      "year": "2010",
+      "tocTitle": "A Common Interface for Humanoid Simulation and Hardware (IEEE-RAS)",
+      "award": false,
+      "id": "CommonInterface",
+      "card": true
+    },
+    {
+      "type": "thesis",
+      "year": "2012",
+      "tocTitle": "A Humanoid Robot Pushing Model Inspired by Human Motion (Master's Thesis)",
+      "award": false,
+      "id": "HumanoidRobotPushingThesis",
+      "card": true
+    },
+    {
+      "type": "bookchapter",
+      "year": "2024",
+      "tocTitle": "Uncovering Older Adult Needs – Applying User-Centered Research Methodologies to Inform Robotics Development and a Call to Action (Human-Robot Interaction - A Multidisciplinary Overview, IntechOpen)",
+      "award": false,
+      "id": "OANeeds",
+      "card": true
+    }
+  ],
+  "cardOrder": [
+    "LBM1paper",
+    "PAPRLE",
+    "OANeeds",
+    "EGRL",
+    "Grip",
+    "Visuomotor",
+    "SEED",
+    "Punyo1",
+    "ActivePressure1",
+    "Monocular1",
+    "BubbleGripper1",
+    "PatchContact",
+    "SmoothContact",
+    "SoftBubble",
+    "CompDes2",
+    "CompDes1",
+    "SoftArm",
+    "Snapbot1",
+    "ImpFuncTheor",
+    "LimbOptPaper",
+    "SoftUkelelePaper",
+    "HuggingPaper",
+    "TeleHeadPaper",
+    "SoftUpperPaper",
+    "SkinShape",
+    "SoftSkinPaper",
+    "HumanoidRobotPushing",
+    "HumanoidRobotPushingThesis",
+    "CommonInterface"
+  ],
+  "patents": [
+    {
+      "year": "2025",
+      "number": "12311529",
+      "title": "Systems and devices for surface slip detection"
+    },
+    {
+      "year": "2025",
+      "number": "12304088",
+      "title": "Systems and methods for calibrating deformable sensors"
+    },
+    {
+      "year": "2025",
+      "number": "12298198",
+      "title": "Robots including a lift actuator and body structure for lifting objects"
+    },
+    {
+      "year": "2025",
+      "number": "12234137",
+      "title": "Lifting robots"
+    },
+    {
+      "year": "2024",
+      "number": "12162738",
+      "title": "Robots and sensor systems having compliant members"
+    },
+    {
+      "year": "2024",
+      "number": "12151361",
+      "title": "Robust and perceptive manipulation through soft-bubble grippers and monocular depth"
+    },
+    {
+      "year": "2024",
+      "number": "12071335",
+      "title": "Sensor devices including force sensors and robots incorporating the same"
+    },
+    {
+      "year": "2024",
+      "number": "12071334",
+      "title": "Pressure sensor devices and robots including the same"
+    },
+    {
+      "year": "2024",
+      "number": "12065134",
+      "title": "Wheel well mounted depth sensors for tire monitoring"
+    },
+    {
+      "year": "2024",
+      "number": "12048998",
+      "title": "Systems and methods for estimating shape, contact forces, and pose of objects manipulated by robots having compliant contact and geometry sensors, cont."
+    },
+    {
+      "year": "2024",
+      "number": "12017897",
+      "title": "Robots having a lift actuator and a tilt structure for lifting and supporting large objects"
+    },
+    {
+      "year": "2024",
+      "number": "11993498",
+      "title": "Structures and sensor assemblies having engagement structures for securing a compliant substrate assembly"
+    },
+    {
+      "year": "2024",
+      "number": "11951633",
+      "title": "Systems for determining location using robots with deformable sensors, cont."
+    },
+    {
+      "year": "2024",
+      "number": "11891288",
+      "title": "Sensors having a deformable layer and a rugged cover layer and robots incorporating the same"
+    },
+    {
+      "year": "2023",
+      "number": "11819999",
+      "title": "Input devices having a deformable membrane and methods of using the same"
+    },
+    {
+      "year": "2023",
+      "number": "11806864",
+      "title": "Robot arm assemblies including fingers having deformable sensors, cont."
+    },
+    {
+      "year": "2023",
+      "number": "11667039",
+      "title": "Systems and methods for estimating shape, contact forces, and pose of objects manipulated by robots having compliant contact and geometry sensors"
+    },
+    {
+      "year": "2023",
+      "number": "11628576",
+      "title": "Deformable sensors and methods for detecting the pose and force on an object, cont."
+    },
+    {
+      "year": "2023",
+      "number": "11585715",
+      "title": "Calibration device and calibration procedure for fluid filled sensor"
+    },
+    {
+      "year": "2023",
+      "number": "11584026",
+      "title": "Robot arm assemblies including fingers having deformable sensors"
+    },
+    {
+      "year": "2023",
+      "number": "11577395",
+      "title": "Systems for determining location using robots with deformable sensors"
+    },
+    {
+      "year": "2022",
+      "number": "11536621",
+      "title": "Methods and systems for calibrating deformable sensors using camera"
+    },
+    {
+      "year": "2022",
+      "number": "11472039",
+      "title": "Deformable sensor with rotatable sensing components for detecting deformation levels"
+    },
+    {
+      "year": "2022",
+      "number": "11465296",
+      "title": "Deformable sensors and methods for detecting the pose and force on an object, cont."
+    },
+    {
+      "year": "2022",
+      "number": "11408788",
+      "title": "Variable geometry and stiffness control for fluid filled sensor"
+    },
+    {
+      "year": "2022",
+      "number": "11389968",
+      "title": "Systems and methods for determining pose of objects held by flexible end effectors"
+    },
+    {
+      "year": "2021",
+      "number": "11185994",
+      "title": "Deformable sensors having multiple time-of-flight emitters"
+    },
+    {
+      "year": "2021",
+      "number": "11007652",
+      "title": "Deformable sensors and methods for detecting the pose and force on an object, cont."
+    },
+    {
+      "year": "2020",
+      "number": "10668627",
+      "title": "Deformable sensors and methods for detecting the pose and force on an object"
+    },
+    {
+      "year": "2020",
+      "number": "10628968",
+      "title": "Systems and methods of calibrating a depth-IR image offset"
+    },
+    {
+      "year": "2020",
+      "number": "10549428",
+      "title": "Robots with compliant contact and geometry sensors having varying touch sensitivity and methods for providing the same"
+    },
+    {
+      "year": "2019",
+      "number": "10248085",
+      "title": "Computational design of robots from high-level task specifications"
+    },
+    {
+      "year": "2017",
+      "number": "9802314",
+      "title": "Soft Body Robot for Physical Interaction with Humans"
+    }
+  ]
+}

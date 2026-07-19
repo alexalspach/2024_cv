@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PC3XHFQMN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0PC3XHFQMN');
+    </script>
+
+
+    <title>Alex Alspach's CV</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Alex Alspach's Education and Experience" />
+    <meta name="keywords" content="design, mechanical, engineering, robotics, robots, cv, curriculum vitae, controls, Drexel, hri, toyota research, soft robots, tactile sensors" />
+    <meta name="author" content="Alex Alspach" />
+
+    <link rel="icon" 
+    type="image/png" 
+    href="../assets/favicons/favicon.png">
+
+
+
+    <!-- Bootstrap-->
+    <link href="../assets/styles/bootstrap310/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../assets/styles/bootstrap310/css/docs.min.css" rel="stylesheet" media="screen">
+
+    <!-- My CSS Overrides -->
+    <link href="../assets/styles/css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Blurred "Invisible Ink" Text -->
+    <link href="../assets/styles/css/blurred-text.css" rel="stylesheet" media="screen">
+
+    <!-- Hover Animations -->
+    <link href="../assets/styles/css/hovercss/hover.css" rel="stylesheet" media="screen">
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Direction aware project gallery -->
+    <link rel="stylesheet" type="text/css" href="../assets/styles/DirectionAwareHoverEffect/css/style.css" />
+    <script src="../assets/styles/DirectionAwareHoverEffect/js/modernizr.custom.97074.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="../assets/styles/DirectionAwareHoverEffect/css/noJS.css"/></noscript>
+    <link href="../assets/styles/css/DirectionAwareHoverEffect_overrides.css" rel="stylesheet" media="screen">
+
+  </head>
+
+
+
+  <body>
+
+
+
+    <div id="top"></div>
+
+    <div class="container-narrow-margin">
+      <div class="container-narrow">
+
+        <div id = "header">
+          <div id = "header-text">
+            <h1 style="margin-top: 0px; padding-top: 0px;"><a href="index.html">Alex Alspach</a><small> soft and interactive robotics</small></h1>
+          </div>
+        </div>
+
+        
+        <div id="content">
+
+            <ul class="nav nav-tabs" data-tabs="tabs">
+              <li class="active"><a id="tab6" href="#projects" data-toggle="tab"><strong>Robots, etc.</strong></a></li>
+              <li><a id="tab3" href="#work" data-toggle="tab">Work</a></li>
+              <li><a id="tab2" href="#education" data-toggle="tab">Education</a></li>
+              <li><a id="tab4" href="#publications" data-toggle="tab">Pubs and Patents</a></li>
+              <li><a id="tab1" href="#me" data-toggle="tab">Me</a></li>
+              <li><a id="tab5" style="background:white; color:#374746" href="../resume/">Resume</a></li>
+            </ul>
+
+            <!-- Floating "Back to top" button (styling in style.css; revealed after scrolling
+                 by the small listener near the bottom of this file). The whole box is the link
+                 (one <a>), so the entire button is tappable, not just the word. -->
+            <div class="sticky-button-container">
+              <a href="#top" class="sticky-top-button" onclick="event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' });">Top</a>
+            </div>
+
+            <div class="tab-content">
+
+              <!-- Robots, Etc. -->
+              <div class="tab-pane active" id="projects"> 
+                <div id="includeProjects"></div>
+              </div>
+
+              <!-- Work -->
+              <div class="tab-pane" id="work"> 
+                <div id="includeExperience"></div>
+              </div>
+
+              <!-- Education -->
+              <div class="tab-pane" id="education"> 
+                <div id="includeEducation"></div>
+              </div>              
+
+              <!-- Publications -->
+              <div class="tab-pane" id="publications"> 
+                <div id="includePapers"></div>
+              </div>
+
+              <!-- Me -->
+              <div class="tab-pane" id="me"> 
+                <div id="includeMe"></div>
+                <div id="includeContact"></div>
+              </div>
+
+            </div>
+          
+        </div>
+      </div>
+
+      <div id="footer-links">
+        Designed by Alex Alspach, 2014
+        <br>
+        Last updated Aug 2025
+        <br>
+
+        <a href="../index.html">alexalspach.com</a></p>
+      </div>
+
+    </div>
+
+
+    <!-- JQuery (self-hosted + pinned; removes CDN dependency and version drift) -->
+    <script src="../assets/styles/jquery/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/styles/bootstrap310/js/bootstrap.js"></script>
+
+    <!-- Tag-based sorting for Projects, etc -->
+    <script src="../assets/styles/js/tag_sorting2.js"></script>
+
+    <!-- Bounded lazy-loading of YouTube embeds (prevents mobile-Safari memory crash) -->
+    <script src="../assets/styles/js/lazy_media.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    var isReload = false;
+
+    // Check if the Navigation Timing API is supported
+    if (performance.getEntriesByType && performance.getEntriesByType('navigation').length > 0) {
+      var navType = performance.getEntriesByType('navigation')[0].type;
+      isReload = navType === 'reload';
+    } else if (performance.navigation) {
+      // Fallback for older browsers
+      isReload = performance.navigation.type === performance.navigation.TYPE_RELOAD;
+    }
+
+    var tabId;
+    var anchorId;
+
+    if (isReload) {
+      // Page was reloaded; ignore the hash and set default tab
+      tabId = 'projects'; // Default tab
+      anchorId = null;
+      // Optionally, clear the hash from the URL without causing a scroll
+      window.history.replaceState(null, null, window.location.pathname);
+    } else {
+      // Page was not reloaded; parse the hash
+      var hash = window.location.hash.substring(1);
+      var parts = hash.split('/');
+      tabId = parts[0] || 'projects'; // Default tab
+      anchorId = parts[1];
+    }
+
+    // Activate the tab
+    $('.nav-tabs a[href="#' + tabId + '"]').tab('show');
+
+    // Update the URL hash without causing scrolling when a tab is shown
+    $('.nav-tabs a').on('shown.bs.tab', function (e) {
+      var currentTabId = $(e.target).attr('href').substring(1);
+      anchorId = null;
+      window.history.replaceState(null, null, '#' + currentTabId);
+      loadContent(currentTabId);
+    });
+
+    // Load content based on the tab
+    function loadContent(tabId) {
+      var contentDivId;
+      var contentUrl;
+
+      switch (tabId) {
+        case 'projects':
+          contentDivId = '#includeProjects';
+          contentUrl = 'projects.html';
+          break;
+        case 'work':
+          contentDivId = '#includeExperience';
+          contentUrl = 'experience.html';
+          break;
+        case 'education':
+          contentDivId = '#includeEducation';
+          contentUrl = 'education.html';
+          break;
+        case 'publications':
+          contentDivId = '#includePapers';
+          contentUrl = 'paperspatents.html';
+          break;
+        case 'me':
+          contentDivId = '#includeMe';
+          contentUrl = 'me.html';
+          break;
+        // Add other cases as needed
+        default:
+          return;
+      }
+
+      // Clear previous content if necessary
+      $(contentDivId).empty();
+
+      // Load content. jQuery's .load() does not return a promise, so error handling must
+      // live inside the complete callback (the old code chained a .fail() that threw
+      // "$(...).load(...).fail is not a function" on every load).
+      $(contentDivId).load(contentUrl, function (response, status) {
+        if (status === 'error') {
+          $(contentDivId).html('<p>Error loading content.</p>');
+          return;
+        }
+        // After content is loaded
+        if (anchorId) {
+          scrollToAnchor(anchorId);
+        } else {
+          // Scroll to top if no anchorId (native; respects scroll-behavior)
+          window.scrollTo(0, 0);
+        }
+
+        // **Initialize hoverdir plugin on dynamically loaded content**
+        initializeHoverDir(contentDivId);
+
+        // **Initialize bounded lazy-loading of YouTube embeds in the loaded content**
+        if (window.initLazyMedia) {
+          window.initLazyMedia(document.querySelector(contentDivId));
+        }
+
+        // Attach click handler for internal links
+        $(contentDivId).off('click', 'a').on('click', 'a', function (e) {
+          var href = $(this).attr('href');
+          if (href && href.startsWith('#')) {
+            e.preventDefault(); // Prevent default behavior
+            var newAnchorId = href.substring(1);
+            if (document.getElementById(newAnchorId)) {
+              // Update the URL hash
+              window.history.replaceState(null, null, '#' + tabId + '/' + newAnchorId);
+              // Update anchorId variable
+              anchorId = newAnchorId;
+              // In-page click -> smooth animated glide to the card
+              scrollToAnchor(newAnchorId, true);
+            }
+          }
+        });
+      });
+    }
+
+    // Scroll to a specific anchor. The 20px offset comes from CSS `scroll-margin-top`.
+    //
+    // `smooth` gives the native animated glide for in-page clicks; deep links jump instantly.
+    // After the move we run a correction pass that nails any residual position drift from lazy
+    // media that finishes loading during/after the scroll. The pass is guarded by a scroll
+    // SENTINEL: it records where it put the page and bails the instant the page ends up
+    // anywhere else — i.e. the user scrolled by ANY means (wheel, trackpad, keyboard,
+    // scrollbar, touch). So it can never fight the user or trap them at the destination.
+    function scrollToAnchor(anchorId, smooth) {
+      var target = document.getElementById(anchorId);
+      if (!target) return;
+      var OFFSET = 20;   // must match scroll-margin-top in the CSS
+
+      // Track deliberate user scroll input so the correction never fights it. We watch the
+      // GESTURES (wheel, touch-move, scroll keys), not the resulting scroll events, so the
+      // page's own glide/correction don't count — and a plain click or tap (no move) doesn't
+      // either.
+      var userMoved = false;
+      function onUser() { userMoved = true; }
+      function onKey(e) { if (/^(Arrow|Page|Home|End| |Spacebar)/.test(e.key)) userMoved = true; }
+      window.addEventListener('wheel', onUser, { passive: true });
+      window.addEventListener('touchmove', onUser, { passive: true });
+      window.addEventListener('keydown', onKey);
+      function cleanup() {
+        window.removeEventListener('wheel', onUser);
+        window.removeEventListener('touchmove', onUser);
+        window.removeEventListener('keydown', onKey);
+      }
+
+      // Correction pass: nudge the target to the offset every 100ms until it holds there
+      // (lazy media above it is still loading and shifting things), then stop. It cancels ONLY
+      // on a real user gesture (userMoved). We deliberately do NOT cancel just because the
+      // scroll position changed — the browser's own "scroll anchoring" moves the page when an
+      // image loads, and treating that as a user scroll used to strand the target at the wrong
+      // spot. Nudges are instant so they don't fight the CSS smooth glide.
+      function correct() {
+        var ticks = 0, held = 0;
+        (function align() {
+          if (userMoved) { cleanup(); return; }        // the user took over -> hands off
+          var top = Math.round(target.getBoundingClientRect().top);
+          if (Math.abs(top - OFFSET) > 1) {
+            target.scrollIntoView({ block: 'start', behavior: 'instant' });
+            held = 0;                                   // moved -> not settled yet
+          } else {
+            held++;                                     // on target this tick
+          }
+          ticks++;
+          if (held < 4 && ticks < 25) setTimeout(align, 100);   // settle = 4 steady ticks; cap ~2.5s
+          else cleanup();
+        })();
+      }
+
+      if (!smooth) {
+        target.scrollIntoView({ block: 'start', behavior: 'instant' });
+        correct();
+        return;
+      }
+
+      // Smooth: glide first, then correct once the glide settles — but only if the user didn't
+      // grab the scroll during the glide, and only if we actually landed near the target.
+      target.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      var lastY = -1, waits = 0;
+      (function waitSettle() {
+        if (userMoved) { cleanup(); return; }
+        var y = Math.round(window.pageYOffset);
+        if (y === lastY || waits > 30) {
+          if (Math.abs(Math.round(target.getBoundingClientRect().top) - OFFSET) <= 250) correct();
+          else cleanup();
+        } else {
+          lastY = y; waits++; setTimeout(waitSettle, 80);
+        }
+      })();
+    }
+
+    // **Function to initialize hoverdir plugin on loaded content**
+    function initializeHoverDir(contentDivId) {
+      // Find all the elements that need hoverdir within the loaded content
+      $(contentDivId).find('#da-thumbs > li').each(function () {
+        $(this).hoverdir();
+      });
+    }
+
+    // Reveal the floating "Top" button only after the reader has scrolled down a bit
+    // (so it isn't sitting there uselessly when you're already at the top).
+    var topBtn = document.querySelector('.sticky-button-container');
+    if (topBtn) {
+      var toggleTopBtn = function () {
+        topBtn.classList.toggle('scrolled', window.pageYOffset > 400);
+      };
+      window.addEventListener('scroll', toggleTopBtn, { passive: true });
+      toggleTopBtn();
+    }
+
+    // Initial content load
+    loadContent(tabId);
+  });
+</script>
+
+
+
+
+
+  </body>
+</html>
