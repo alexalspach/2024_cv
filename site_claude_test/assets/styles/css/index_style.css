@@ -114,7 +114,7 @@ a:hover{
   
   margin-left: 0px;
   background-color: white;
-  width: 301px;
+  width: fit-content;
   
   padding-top: 12px;
   padding-bottom: 10px;
@@ -381,7 +381,7 @@ a:hover{
 	}
 
 	#buttons{
-		width: 485px;
+		width: fit-content;
  	 	padding-top: 12px;
   		padding-bottom: 15px;
 	}

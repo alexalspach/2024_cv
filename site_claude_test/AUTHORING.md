@@ -54,32 +54,72 @@ If the page looks out of date, press **Cmd+Shift+R** to force a fresh load.
 2. **Write the project's story** in a new file `cv/projects/MyRobot.html`.
    Easiest way: open an existing one and copy it, then change the words.
 
-3. **Add it to `cv/data/projects.json`** in three spots (copy an existing entry as a template):
+3. **Add ONE record to `cv/data/projects.json`**, under `"projects"` (copy an existing one).
+   Everything about the project lives in this single block. Put it where you want it to appear —
+   the page order follows this file, newest at the top.
 
    ```jsonc
-   // (a) the facts — under "projects"
-   "MyRobot": { "year": "2025", "featured": false,
-                "tags": ["soft","hwdev"],
-                "tocTitle": "My Robot: the longer title for the contents list" },
+   "MyRobot": {
+     "year": "2025",
+     "featured": false,
+     "tags": ["soft", "h/w dev"],                 // friendly names OR codes — both work
+     "tocTitle": "My Robot: the longer title for the contents list",
 
-   // (b) its thumbnail tile — in the "grid" list
-   { "target": "MyRobot", "thumb": "MyRobotthumb.jpg",
-     "title": "My Robot", "role": "What I did",
-     "hero_img": "assets/images/projects/MyRobot/photo.jpg" },
-
-   // (c) its place in the list — add the name to "cardOrder"
-   "MyRobot"
+     "thumb": "MyRobotthumb.jpg",                 // the square grid picture...
+     "gridTitle": "My Robot",                     // ...its bold label...
+     "role": "What I did",                        // ...and the small line under it
+     "hero_img": "assets/images/projects/MyRobot/photo.jpg",  // optional: auto-make the
+     "crop": "top"                                // square thumb from this photo (crop optional)
+   }
    ```
+
+   - Have a pre-made square thumbnail? Just give `thumb` (skip `hero_img`/`crop`).
+   - Want the computer to make the thumbnail? Give `hero_img` (a full-size photo) and it crops a
+     square for you; add `crop` to choose which part (see below).
+   - **No grid picture at all?** Leave out `thumb`, `gridTitle`, `role` — it still gets a
+     contents entry and a full write-up, just no tile in the top grid.
 
 4. **Run** `python3 tools/build.py`.
 
-**What the computer does for you:** crops your photo into a tidy square thumbnail, adds the
-project to the picture grid, the contents list, and as a full card — all with the **same tags**
-— and files it under the right **year** automatically. (The contents list follows the card
-order and groups by year, so there's nothing else to line up.)
+**What the computer does for you:** makes the square thumbnail, then adds the project to the
+picture grid, the contents list, and as a full write-up — all with the **same tags** — and files
+it under the right **year** automatically. Everything comes from that one record, so the three
+places can never drift apart, and there's no separate list or order to keep in sync.
 
-> **Tags** are the little filter buttons (soft, tactile, humanoids, tri…). Just list the ones
-> that fit in `tags` — you only type them once and they apply everywhere.
+> **Tags** are the little filter buttons (soft, tactile, humanoids, tri…). List the ones that fit
+> in `tags` — you type them once and they apply everywhere. You can write the **friendly** name
+> off the button (`design/mfg`, `h/w dev`, `vision`, `toyota (tri)`) or the short code
+> (`designmfg`, `hwdev`, `computervision`, `tri`); the build understands both.
+
+> **Notes in the file:** `cv/data/projects.json` allows `//` comments (and a stray trailing comma
+> won't break the build), so you can leave yourself reminders. There's a tag cheat-sheet comment
+> near the top.
+
+### Choosing which part of the photo becomes the thumbnail
+
+The grid thumbnails are **squares**, but your photo usually isn't. By default the computer keeps
+the **middle** of the photo. If the good part is off to one side (a face in the top corner, a
+robot on the left…), add a **`"crop"`** to the project's record (only matters when you use a
+`hero_img`) to say which part to keep:
+
+- **A spot by name:** `center` (default), `top`, `bottom`, `left`, `right`,
+  `top-left`, `top-right`, `bottom-left`, `bottom-right`.
+- **An exact spot:** `"30% 10%"` — first number is left→right (0% = far left, 100% = far right),
+  second is top→bottom (0% = top, 100% = bottom). So `"50% 0%"` is the same as `top`.
+
+```jsonc
+"MyRobot": {
+  "year": "2025", "tags": ["soft"], "tocTitle": "…",
+  "thumb": "MyRobotthumb.jpg", "gridTitle": "My Robot", "role": "What I did",
+  "hero_img": "assets/images/projects/MyRobot/photo.jpg",
+  "crop": "top"
+}
+```
+
+Because your photo didn't change, a normal build won't redo the thumbnail — so after changing a
+crop, rebuild with **`python3 tools/build.py --force-thumbs`** to see the new crop. (Prefer to
+just eyeball it first? `python3 tools/gen_thumb.py photo.jpg try.jpg 400 top` writes one test
+thumbnail you can open.)
 
 ---
 
@@ -131,9 +171,10 @@ stays in the file, and its write‑up is kept safe. Delete that line to bring it
 | I want to… | Do this |
 |---|---|
 | Rebuild the pages | `python3 tools/build.py` |
+| Rebuild + redo every thumbnail (after a `crop` change) | `python3 tools/build.py --force-thumbs` |
 | Look at the site | `./startServer.sh` → http://localhost:8000/cv/ |
 | Make sure nothing broke | `tests/.venv/bin/python tests/test_cv.py` |
-| Make one square thumbnail by hand | `python3 tools/gen_thumb.py photo.jpg output.jpg` |
+| Try one thumbnail crop by hand | `python3 tools/gen_thumb.py photo.jpg out.jpg 400 top` |
 
 That's the whole system: **edit a small file, run one command, refresh the page.**
 

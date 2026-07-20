@@ -20,7 +20,10 @@
 #    python3 tools/build_pubs.py --check    # just check if it's up to date
 #  (Or `python3 tools/build.py` to build this AND the projects page at once.)
 # =============================================================================
-import os, json, sys
+import os, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import dataio                              # forgiving JSON loader (allows // notes, trailing commas)
 
 CV = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "cv")
 OUT = os.path.join(CV, "paperspatents.html")
@@ -103,7 +106,7 @@ def render(data):
 
 def main():
     check = "--check" in sys.argv          # --check = don't write, just say if it's stale
-    data = json.load(open(os.path.join(CV, "data", "publications.json"), encoding="utf-8"))
+    data = dataio.load(os.path.join(CV, "data", "publications.json"))
     html = render(data)
     current = open(OUT, encoding="utf-8").read() if os.path.exists(OUT) else ""
     if check:
